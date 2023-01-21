@@ -1,1 +1,1 @@
-# CRAFTMINE
+# CRAFTMINE.github.io
