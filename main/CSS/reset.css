@@ -70,6 +70,8 @@ input, textarea, button, select {
     background-color: transparent;
 }
 
+input, select {outline:none;}
+
 input::-ms-clear {
 	display: none;
 }

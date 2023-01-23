@@ -1,6 +1,6 @@
 body{
     width: 1600;
-    background: url(/images/back-ground.png);
+    background: url(../src/back-ground.png);
     background-color:rgb(34, 51, 58);
 
 }
@@ -29,19 +29,23 @@ header div{
 
 .select {
     height: 35px;
+    background-color: white;
 }
 
 header form {
     display: block;
-    width:300px;
+    width: 300px;
     height: 35px;
     padding-left: 10px;
 }
 
 input{
+    background-color: white;
+    height: 35px;
     padding:4px 10px;
     border:1px solid;
     font-size:12px;
+
 }
 
 .search {
@@ -49,10 +53,11 @@ input{
 }
 
 .submit{
-    height: auto;
+    height: 35px;
     width: 70px;
-    background-color: rgb(39, 65, 77);    
+    background-color:white;  
     color:#ffffff;
+    border: 1px solid white;
 }
 
 .crafting-app__wrapper {
