@@ -1,0 +1,167 @@
+body{
+    width: 1600;
+    background: url(/images/back-ground.png);
+    background-color:rgb(34, 51, 58);
+
+}
+
+header{
+    display: flex;
+    height: 70px;
+}
+
+header a img{
+    margin-top: 10px;
+    width: 300px;
+    height: auto;
+}
+
+header div{
+    display: flex;
+    align-items: stretch;
+    position: fixed;
+    right: 0px;
+    top: 10px;
+    height: auto;
+    width: 450px;
+    padding: 10px;
+}
+
+.select {
+    height: 35px;
+}
+
+header form {
+    display: block;
+    width:300px;
+    height: 35px;
+    padding-left: 10px;
+}
+
+input{
+    padding:4px 10px;
+    border:1px solid;
+    font-size:12px;
+}
+
+.search {
+    width: 200px;
+}
+
+.submit{
+    height: auto;
+    width: 70px;
+    background-color: rgb(39, 65, 77);    
+    color:#ffffff;
+}
+
+.crafting-app__wrapper {
+    margin: 15px 0;
+    overflow: hidden;
+}
+
+.crafting-app__recipe {
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 15px;
+    float: left;
+}
+
+.recipe {
+    height: 152px;
+    padding: 10px;
+    display: inline-block;
+    overflow: hidden;
+    background: #c7c7c7;
+    border: 1px solid #c3baba;
+    border-radius: 5px;
+    font-size: 0;
+    line-height: 0;
+    float: left;
+    position: relative;
+}
+
+.recipe_input, .recipe_output {
+    display: inline-block;
+    width: 132px;
+    height: 132px;
+    float: left;
+}
+.recipe_output {
+    position: relative;
+}
+
+.recipe_smelting .recipe_input i{
+
+    position: absolute;
+    left: 44px;
+
+}
+
+.recipe_smelting .recipe_input i:nth-child(2){
+
+    top: 94px;
+
+}
+
+.recipe i {
+    width: 42px;
+    height: 42px;
+    display: inline-block;
+    background-color: #8b8b8b;
+    box-shadow: 1px 1px 0 0 #fff, inset 1px 1px 0 0 #373737;
+    margin: 1px;
+    position: relative;
+}
+.recipe i:before {
+    top: 5px;
+    left: 5px;
+}
+
+.recipe_output i {
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    top: 40px;
+    right: 0;
+}
+
+.recipe_output i::after {
+    content: "➔";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    color: rgb(139, 139, 139);
+    position: absolute;
+    left: -55px;
+    top: 25px;
+    text-shadow: rgb(255, 255, 255) 1px 1px 0px;
+}
+
+.recipe_smelting::before {
+    content: "Печь";
+    position: absolute;
+    top: 76px;
+    left: 7px;
+}
+.recipe_smelting:before{
+    color: #404040;
+    font-size: 16px;
+    transform: rotate(-90deg);
+}
+
+.recipe_smelting .recipe_input:after{
+    background: url(../SRC/furnace.gif) no-repeat;
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    content: "";
+    left: 50px;
+    top: 55px;
+}
+
+.recipe_smelting .recipe_output i::after {
+    left: -80px;
+    color: #fff;
+    text-shadow: 1px 1px 0 #8b8b8b;
+}
