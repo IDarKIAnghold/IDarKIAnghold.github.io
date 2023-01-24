@@ -63,8 +63,8 @@ input{
 .craffting-app_wrapper {
     margin: 15px 0;
     overflow: hidden;
-    width: 764px;
-    height: 153px;
+    width: 500px;
+    height: auto;
 }
 
 .crafting-app__recipe {
@@ -176,7 +176,7 @@ input{
 .crafting-app__ingredients{
     display: inline-block;
     float: left;
-    margin-left: 15px;
+    margin-left: 24px;
 }
 
 .crafting-app__ingredients ul {
