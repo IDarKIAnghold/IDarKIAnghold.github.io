@@ -60,9 +60,11 @@ input{
     border: 1px solid white;
 }
 
-.crafting-app__wrapper {
+.craffting-app_wrapper {
     margin: 15px 0;
     overflow: hidden;
+    width: 764px;
+    height: 153px;
 }
 
 .crafting-app__recipe {
@@ -169,4 +171,46 @@ input{
     left: -80px;
     color: #fff;
     text-shadow: 1px 1px 0 #8b8b8b;
+}
+
+.crafting-app__ingredients{
+    display: inline-block;
+    float: left;
+    margin-left: 15px;
+}
+
+.crafting-app__ingredients ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-flow: column wrap;
+    margin: 13px 0 0 0;
+    height: 122px;
+}
+
+.crafting-app__ingredients ul li {
+    width: 190px;
+    float: left;
+    margin-bottom: 8px;
+    height: 32px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.crafting-app__ingredients ul li i {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.recipe i:before, .crafting-app i:before {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    content: "";
+    background: url() no-repeat;
+    background-position: 32px 32px;
 }
