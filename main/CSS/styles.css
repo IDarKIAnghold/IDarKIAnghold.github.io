@@ -211,6 +211,38 @@ input{
     margin-right: 8px;
 }
 
+.recipe_smithing::before {
+    content: "Стол кузнеца";
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    color: rgb(64, 64, 64);
+    font-size: 16px;
+}
+
+.recipe_smithing .recipe_input:after {
+    content: "+";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    color: #8b8b8b;
+    position: absolute;
+    left: 65px;
+    top: 75px;
+    text-shadow: 1px 1px 0 #fff;
+}
+
+.recipe_smithing .recipe_input i:nth-child(1) {
+    position: absolute;
+    top: 56px;
+    left: 105px;
+}
+
+.recipe_smithing .recipe_input i:nth-child(2) {
+    position: absolute;
+    top: 56px;
+}
+
 .recipe i:before, .crafting-app i:before {
     width: 32px;
     height: 32px;
