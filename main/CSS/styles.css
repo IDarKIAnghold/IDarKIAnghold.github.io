@@ -104,16 +104,12 @@ input{
 }
 
 .recipe_smelting .recipe_input i{
-
     position: absolute;
     left: 44px;
-
 }
 
-.recipe_smelting .recipe_input i:nth-child(2){
-
+.recipe_smelting .recipe_input i:nth-child(1){
     top: 94px;
-
 }
 
 .recipe i {
