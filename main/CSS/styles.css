@@ -227,18 +227,18 @@ input{
     text-shadow: 1px 1px 0 #fff;
 }
 
-.recipe_smithing .recipe_input i:nth-child(1) {
+.recipe_smithing .recipe_input i {
     position: absolute;
     top: 56px;
 }
 
-.recipe_smithing .recipe_input i:nth-child(2) {
+.recipe_smithing .recipe_input i:nth-child(1) {
     position: absolute;
     top: 56px;
     left: 105px;
 }
 
-.recipe i:before, .crafting-app i:before {
+.crafting-app i:before {
     width: 32px;
     height: 32px;
     position: absolute;
