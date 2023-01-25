@@ -60,10 +60,15 @@ input{
     border: 1px solid white;
 }
 
+.page{
+    border-radius: 10px;
+    width: 72%;
+    float: left;
+}
+
 .craffting-app_wrapper {
     margin: 15px 0;
     overflow: hidden;
-    width: 500px;
     height: auto;
 }
 
@@ -211,6 +216,23 @@ input{
     height: 32px;
     position: absolute;
     content: "";
-    background: url() no-repeat;
+    background: url(../SRC/VANILACSS.png) no-repeat;
     background-position: 32px 32px;
+}
+
+.crafting-app__items{
+    height: 520px;
+    width: 100%;
+}
+
+.crafting-app .vb .vb-content {
+    padding-right: 10px;
+}
+
+.crafting-app__item{
+    position: relative;
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
 }
