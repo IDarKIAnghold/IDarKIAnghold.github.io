@@ -216,7 +216,6 @@ input{
     position: absolute;
     top: 15px;
     left: 10px;
-    color: rgb(64, 64, 64);
     font-size: 16px;
 }
 
@@ -235,12 +234,12 @@ input{
 .recipe_smithing .recipe_input i:nth-child(1) {
     position: absolute;
     top: 56px;
-    left: 105px;
 }
 
 .recipe_smithing .recipe_input i:nth-child(2) {
     position: absolute;
     top: 56px;
+    left: 105px;
 }
 
 .recipe i:before, .crafting-app i:before {
@@ -267,4 +266,5 @@ input{
     width: 44px;
     height: 44px;
     cursor: pointer;
+    border: 1px solid;
 }
