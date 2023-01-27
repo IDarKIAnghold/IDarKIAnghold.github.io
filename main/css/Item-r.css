@@ -1,0 +1,54 @@
+.railcraft i:before{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    content: "";
+    background: url(../SRC/RailcraftCSS.png) no-repeat;
+    background-position: 32px 32px;
+}
+
+i.r1::before{
+    background-position: -32px -0
+}
+i.r2::before{
+    background-position: -64px -0
+}
+i.r3::before{
+    background-position: -96px -0
+}
+i.r4::before{
+    background-position: -128px -0
+}
+i.r5::before{
+    background-position: -160px -0
+}
+i.r6::before{
+    background-position: -192px -0
+}
+i.r7::before{
+    background-position: -224px -0
+}
+i.r8::before{
+    background-position: -256px -0
+}
+i.r9::before{
+    background-position: -288px -0
+}
+i.r10::before{
+    background-position: -320px -0
+}
+i.r11::before{
+    background-position: -352px -0
+}
+i.r12::before{
+    background-position: -384px -0
+}
+i.r13::before{
+    background-position: -416px -0
+}
+i.r14::before{
+    background-position: -448px -0
+}
+i.r15::before{
+    background-position: -480px -0
+}

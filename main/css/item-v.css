@@ -1,4 +1,4 @@
-.recipe v:before, .crafting-app v:before, i.crafting-app__item:before{
+.vanila i:before{
     width: 32px;
     height: 32px;
     position: absolute;
