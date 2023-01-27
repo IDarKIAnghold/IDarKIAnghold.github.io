@@ -6,8 +6,9 @@ body{
 }
 
 header{
+    background-color: rgb(34,51,58);
     display: flex;
-    height: 70px;
+    height: 73px;
 }
 
 header a img{
@@ -29,8 +30,11 @@ header div{
 
 .select {
     height: 35px;
+    position: relative;
+    margin: 0 auto;
     background-color: white;
 }
+
 
 header form {
     display: block;
@@ -238,16 +242,6 @@ input{
     top: 56px;
     left: 105px;
 }
-
-.crafting-app i:before {
-    width: 32px;
-    height: 32px;
-    position: absolute;
-    content: "";
-    background: url(../SRC/VANILACSS.png) no-repeat;
-    background-position: 32px 32px;
-}
-
 .crafting-app__items{
     height: 520px;
     width: 100%;
@@ -263,5 +257,9 @@ input{
     width: 44px;
     height: 44px;
     cursor: pointer;
-    border: 1px solid;
+}
+
+.crafting-app__item:before{
+    top: 6px;
+    left: 6px;
 }
