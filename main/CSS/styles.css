@@ -257,6 +257,8 @@ input{
     width: 44px;
     height: 44px;
     cursor: pointer;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
 }
 
 .crafting-app__item:before{
@@ -264,14 +266,8 @@ input{
     left: 6px;
 }
 
-.crafting-app__item{
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
-}
-
 i.crafting-app__item:hover{
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+    background-color: rgb(179, 169, 169)
 }
