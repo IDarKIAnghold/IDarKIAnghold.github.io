@@ -267,7 +267,7 @@ input{
 }
 
 i.crafting-app__item:hover{
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    background-color: rgb(179, 169, 169)
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+    background-color: rgb(201, 189, 189)
 }
