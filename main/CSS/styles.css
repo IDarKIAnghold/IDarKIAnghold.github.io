@@ -39,20 +39,19 @@ input{
     background-color: white;
     height: 100%;
     padding:4px 10px;
-    font-size:12px;
+    font-size:14px;
 
 }
 
 .search {
-    width: 950px;
+    width: 940px;
 }
 
 .submit{
     height: 100%;
-    width:80px;
+    width:90px;
     background-color:white;  
     color:#000000;
-    font-size:12px;
 }
 
 .page{
@@ -260,5 +259,5 @@ input{
 i.crafting-app__item:hover{
     -webkit-transform: scale(1.03);
     transform: scale(1.03);
-    background-color: rgb(201, 189, 189)
+    background-color: #c3baba
 }
