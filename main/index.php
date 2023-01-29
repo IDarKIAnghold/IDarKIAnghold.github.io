@@ -199,11 +199,13 @@
 
                     </div>
 
-                    <div class="">
+                    <div class="" id="all-items">
 
-                        <div class="form-outline mb-1">
+                        <form id="search-highlight" method="post" action="#" class="mb-2">
 
-                            <input type="search" id="datatable-search-input" class="form-control" placeholder="Search" id="datatable-search-input">                        </div>
+                            <input type="text" class="form-control" />
+
+                        </form>
 
                         <div class="crafting-app__items vb vb-visible" id="vanila" style="display:block">
 
@@ -1001,6 +1003,8 @@
     </footer>
 
     <script src="js/main.js"></script>
+</script>
+
 </body>
 
 </html>
