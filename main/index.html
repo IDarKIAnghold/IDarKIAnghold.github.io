@@ -17,27 +17,28 @@
 
 <body class="bg-dark">
 
-    <header>
+    <header class="sticky-top">
 
-        <nav class="">
+        <nav class="p-2">
 
-            <a href=""><img src="SRC/craftmine.png" alt=""></a>
+            <a href="/main" class="m-1"><img src="SRC/craftmine.png" alt=""></a>
 
-            <div class="">
+                <select name="" class="select float-right m-1" id="select">
 
-                <select name="" class="select" id="select">
                     <option value="1">Vanila</option>
-                    <option value="2">Railcraft</option>
-                    <option value="3">Lord of the ring</option>
-                </select>
 
-            </div>
+                    <option value="2">Railcraft</option>
+
+                    <option value="3">Lord of the ring</option>
+
+                </select>
 
         </nav>
 
     </header>
 
-    <main>
+    <main class="">
+
         <div class="container-fluid  d-flex h-100 justify-content-center align-items-center p-0">
 
             <div class="col-md-7 m-4 p-4 page bg-white">
@@ -198,15 +199,13 @@
 
                     </div>
 
-                    <div>
+                    <div class="">
 
-                        <form class="m-1" style="display: block;">
+                        <div class="form-outline mb-1"> 
 
-                            <input type="text" name=text" class="search shadow-sm" placeholder="Search here">
-        
-                            <input type="submit" name="submit " class="submit shadow-sm" value="Search">
-        
-                        </form>
+                            <input type="search" id="form1" class="form-control" placeholder="Search" aria-label="Search" />   
+
+                        </div>
 
                         <div class="crafting-app__items vb vb-visible" id="vanila" style="display:block">
 
@@ -999,7 +998,7 @@
 
     </main>
 
-    <footer>
+    <footer class="fixed-bottom">
 
     </footer>
 

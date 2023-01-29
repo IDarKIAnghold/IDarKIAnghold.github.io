@@ -7,57 +7,17 @@ body{
 
 header{
     background-color: rgb(34,51,58);
-    display: flex;
     height: 73px;
 }
 
 header a img{
-    margin-top: 10px;
     width: 300px;
     height: auto;
 }
 
-header div{
-    display: flex;
-    align-items: stretch;
-    position: fixed;
-    right: 0px;
-    top: 10px;
-    height: auto;
-    width: 450px;
-    padding: 10px;
-}
-
 .select {
     height: 30px;
-    position: relative;
-    margin: 0 auto;
     background-color: white;
-}
-
-input{
-    background-color: white;
-    height: 100%;
-    padding:4px 10px;
-    font-size:14px;
-
-}
-
-.search {
-    width: 940px;
-}
-
-.submit{
-    height: 100%;
-    width:90px;
-    background-color:white;  
-    color:#000000;
-}
-
-.page{
-    border-radius: 10px;
-    width: 72%;
-    float: left;
 }
 
 .craffting-app_wrapper {
