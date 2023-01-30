@@ -8,4 +8,4 @@ document.getElementById("select")
             a;
         for (a in b) document.getElementById(b[a])
             .style.display = 0 == c || c == a ? "block" : "none"
-};
+    };
