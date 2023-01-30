@@ -2,7 +2,7 @@ window.onload = () =>{
     let input =  document.querySelector('#input');
     input.oninput = function(){
         let value = this.value.trim();
-        let item = document.querySelectorAll('.crafting-app__items i[title]');
+        let item = document.querySelectorAll('.crafting-app__items i');
         if(value !=''){
             item.forEach(elem => {
                     if(elem.innerText.search(value) == -1){
