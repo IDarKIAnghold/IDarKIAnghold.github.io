@@ -221,3 +221,7 @@ i.crafting-app__item:hover{
     transform: scale(1.03);
     background-color: #c3baba
 }
+
+.hide{
+    display: none;
+}

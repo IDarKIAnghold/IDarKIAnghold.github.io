@@ -1,6 +1,5 @@
 {
     "recommendations": [
-        "brapifra.phpserver",
-        "ritwickdey.liveserver"
+        "brapifra.phpserver"
     ]
 }

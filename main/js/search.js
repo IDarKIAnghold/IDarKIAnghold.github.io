@@ -1,0 +1,21 @@
+window.onload = () =>{
+    let input =  document.querySelector('#input');
+    input.oninput = function(){
+        let value = this.value.trim();
+        let item = document.querySelectorAll('.crafting-app__items i[title]');
+        if(value !=''){
+            item.forEach(elem => {
+                    if(elem.innerText.search(value) == -1){
+                        elem.classList.add('hide');
+                    }
+                    else{
+                        elem.classList.remove('hide');
+                    }
+            });
+        } else {
+            item.forEach(elem =>
+                elem.classList.remove('hide')
+        )}
+    }
+    console.log(this.value);
+}
