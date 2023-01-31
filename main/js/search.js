@@ -2,7 +2,7 @@ window.onload = () =>{
     let input =  document.querySelector('#input');
     input.oninput = function(){
         let value = this.value.trim();
-        let item = document.querySelectorAll('.crafting-app__items i');
+        let item = document.querySelectorAll('.crafting-app__items .crafting-app__item');
         if(value !=''){
             item.forEach(elem => {
                     if(elem.getAttribute('title').search(new RegExp(value, 'i')) == -1){
@@ -16,6 +16,4 @@ window.onload = () =>{
             item.forEach(elem =>
                 elem.classList.remove('hide')
         )}
-    }
-    console.log(this.value);
-}
+}}
