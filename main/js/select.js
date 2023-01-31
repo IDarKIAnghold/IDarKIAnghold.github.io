@@ -10,7 +10,7 @@ document.getElementById("select")
     .style.display = 0 == c || c == a ? "block" : "none"
     
     document.getElementById("input").value = "";
-    let item = document.querySelectorAll('.crafting-app__items i');
+    let item = document.querySelectorAll('.crafting-app__items .crafting-app__item');
     item.forEach(elem =>
         elem.classList.remove('hide')
     )
