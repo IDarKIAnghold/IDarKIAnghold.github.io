@@ -5,7 +5,7 @@ window.onload = () =>{
         let item = document.querySelectorAll('.crafting-app__items i');
         if(value !=''){
             item.forEach(elem => {
-                    if(elem.innerText.search(value) == -1){
+                    if(elem.innerHTML.search(value) == -1){
                         elem.classList.add('hide');
                     }
                     else{
