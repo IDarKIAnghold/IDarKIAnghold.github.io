@@ -217,9 +217,7 @@ header a img{
 }
 
 i.crafting-app__item:hover{
-    -webkit-transform: scale(1.03);
-    transform: scale(1.03);
-    background-color: #c3baba
+    background-color: #333
 }
 
 .hide{
