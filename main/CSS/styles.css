@@ -4,23 +4,30 @@ body{
     background-color:rgb(34, 51, 58);
 }
 
-.scrollbar {
-    scrollbar-width: auto;
-    scrollbar-color: transparent rgb(139, 139, 139);
+.container {
+    width: 1120px !important;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-.scrollbar::-webkit-scrollbar {width: 12px}
+.scrollbar {
+    overflow-y: scroll;
+    height: 100%;
+    width: 100%;
+}
 
-.scrollbar::-webkit-scrollbar-track {background: transparent}
-
-.scrollbar::-webkit-scrollbar-thumb {background-color: rgb(139, 139, 139)}
+.scrollbar::-webkit-scrollbar {width: 7px; }
+.scrollbar::-webkit-scrollbar-track {background: transparent; }
+.scrollbar::-webkit-scrollbar-thumb {background-color: rgba(68,68,68,0.91); border-radius: 10px;}
 
 .page{
-    background-color: #1e1e1e;
-    color: white;
-    border-radius: 5px;
-    background: url(../src/box_body_background.png);
+    width: 100%;
+    float: left;
     padding-bottom: 15px;
+    font-family: Tahoma,Arial,sans-serif;
+    background: url(../SRC/box_body_background.png) #1e1e1e;
+    border-radius: 3px 3px;
+    box-shadow: 0 1px 0 0 #484848, 0 -1px 0 0 #272727, 0 2px 4px #131111;
 }
 
 .search{
@@ -48,6 +55,7 @@ body{
 .header{
     background-color: #1e1e1e;
     border-radius: 0 0 5px 5px;
+    width: 100%;
 }
 
 header{
@@ -143,7 +151,7 @@ header a img{
     position: absolute;
     left: -55px;
     top: 25px;
-    text-shadow: rgb(255, 255, 255) 1px 1px 0px;
+    text-shadow: white 1px 1px 0px;
 }
 
 .recipe_smelting::before {
@@ -177,6 +185,7 @@ header a img{
 
 .recipe_smithing::before {
     content: "Стол кузнеца";
+    color: #404040;
     position: absolute;
     top: 15px;
     left: 10px;
@@ -207,35 +216,38 @@ header a img{
 }
 
 .crafting-app__items{
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    position: relative; 
+    overflow: hidden;
     height: 520px;
+    width: 100%;
+    border-radius: 3px 3px;
 }
 
 .crafting-app__item{
-    position: relative;
     display: inline-block;
-    width: 44px;
-    height: 44px;
+    position: relative;
     cursor: pointer;
     transition: .3s ease-in-out;
     margin-bottom:-6px;
-}
-
-.crafting-app__items i{
-    width: 42px;
-    height: 42px;
-    background-color: #8b8b8b;
+    width: 44px;
+    height: 44px;
 }
 
 .crafting-app__items i::before{
-    top: 5px;
-    left: 5px;
+    top: 6px;
+    left: 6px;
 }
 
 i.crafting-app__item:hover{
     background-color: #333
+}
+
+.crafting-app__title {
+    color: #fff;
+    font-family: Arial;
+    font-size: 20px;
+    line-height: 100%;
+    margin-bottom: 10px;
 }
 
 .hide{

@@ -1,4 +1,4 @@
-crafting_db = {
+crafting_dbv = {
     1: { id: "1", type: "minecraft:stone", name: "\u041a\u0430\u043c\u0435\u043d\u044c", recipes: [{ type: "smelting", count: "1", input: [[{ index: "22", count: "1" }]] }] }, 
     2: { id: "2", type: "minecraft:granite", name: "\u0413\u0440\u0430\u043d\u0438\u0442", recipes: [{ type: "shapeless", count: "1", input: [[{ index: "4", count: "1" }], [{ index: "725", count: "1" }]] }] }, 3: {
         id: "3", type: "minecraft:polished_granite", name: "\u041f\u043e\u043b\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0439 \u0433\u0440\u0430\u043d\u0438\u0442", recipes: [{
@@ -2221,9 +2221,8 @@ crafting_db = {
                 }], 2: [{ index: "31", count: "1" }], 3: [{ index: "31", count: "1" }], 4: [{ index: "31", count: "1" }], 5: [{ index: "31", count: "1" }], 7: [{ index: "765", count: "1" }]
             }, width: 3, height: 3
         }]
-    }, 813: { id: "813", type: "minecraft:bucket", name: "\u0412\u0435\u0434\u0440\u043e", tab: "6", recipes: [{ type: "shaped", count: "1", input: { 0: [{ index: "728", count: "1" }], 2: [{ index: "728", count: "1" }], 4: [{ index: "728", count: "1" }] }, width: 3, height: 2 }] }, 814: {
-        id: "814", type: "minecraft:water_bucket", name: "\u0412\u0435\u0434\u0440\u043e \u0432\u043e\u0434\u044b",
-        tab: "6", recipes: []
+    }, 813: { id: "813", type: "minecraft:bucket", name: "\u0412\u0435\u0434\u0440\u043e", tab: "6", recipes: [{ type: "shaped", count: "1", input: { 0: [{ index: "728", count: "1" }], 2: [{ index: "728", count: "1" }], 4: [{ index: "728", count: "1" }] }, width: 3, height: 2 }] }, 
+    814: {id: "814", type: "minecraft:water_bucket", name: "\u0412\u0435\u0434\u0440\u043e \u0432\u043e\u0434\u044b",tab: "6", recipes: []
     }, 815: { id: "815", type: "minecraft:lava_bucket", name: "\u0412\u0435\u0434\u0440\u043e \u043b\u0430\u0432\u044b", tab: "6", recipes: [] }, 816: { id: "816", type: "minecraft:powder_snow_bucket", name: "\u0412\u0435\u0434\u0440\u043e \u0441 \u0440\u044b\u0445\u043b\u044b\u043c \u0441\u043d\u0435\u0433\u043e\u043c", tab: "6", recipes: [] }, 817: { id: "817", type: "minecraft:snowball", name: "\u0421\u043d\u0435\u0436\u043e\u043a", tab: "6", recipes: [] }, 818: {
         id: "818", type: "minecraft:leather", name: "\u041a\u043e\u0436\u0430",
         tab: "6", recipes: [{ type: "shaped", count: "1", input: [[{ index: "1014", count: "1" }], [{ index: "1014", count: "1" }], [{ index: "1014", count: "1" }], [{ index: "1014", count: "1" }]], width: 2, height: 2 }]
@@ -3060,10 +3059,12 @@ crafting_db = {
 
 const ElemBody = document.getElementById('vanilaChild')
 
-Object.keys(crafting_db).forEach(function(key) {
+Object.keys(crafting_dbv).forEach(function(key) {
     const iElem = document.createElement('i')
-    iElem.className = `crafting-app__item v${crafting_db[key].id}`
-    iElem.title = crafting_db[key].name;
+    iElem.className = `crafting-app__item v${crafting_dbv[key].id}`
+    iElem.title = crafting_dbv[key].name;
+    if(crafting_dbv[key].recipes == ''){iElem.style.display = "none"}
+
     ElemBody.appendChild(iElem)
 });
   

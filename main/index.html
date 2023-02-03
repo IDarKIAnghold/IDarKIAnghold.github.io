@@ -16,24 +16,27 @@
 
 <body class="bg-dark">
 
-    <header class="container-fluid  d-flex h-100 justify-content-center p-0">
-        <div class="header col-md-7">
-            <nav class="p-2">
-                <a href="/main" class="m-1"><img src="SRC/craftmine.png" alt=""></a>
-                    <select name="" class="select float-right m-1" id="select">
-                        <option value="1">Vanila</option>
-                        <option value="2">Railcraft</option>
-                    </select>
-            </nav>
-        </div>
-    </header>
-
-    <main class="">
-        <div class="container-fluid  d-flex h-100 justify-content-center align-items-center p-0">
-            <div class="col-md-7 page">
+    <div class="container">
+        <header class="container-fluid d-flex h-100 justify-content-center p-0 mb-4">
+            <div class="header">
+                <nav class="p-2">
+                    <a href="/main" class="float-left"><img src="SRC/craftmine.png" alt=""></a>
+                        <select name="" class="select float-right m-1" id="select">
+                            <option value="1">Vanila</option>
+                            <option value="2">Railcraft</option>
+                        </select>
+                </nav>
+            </div>
+        </header>
+    
+        <main class="page">
+            <div class="container-fluid  h-100 justify-content-center align-items-center">
                 <div class="crafting_app">
                     <div class="craffting-app_wrapper">
                         <div class="crafting-app_recipe">
+                            <div class="mb-2">
+                                <i class="crafting-app__title">Крафт предмета:</i>
+                            </div>
                             <div class="recipe recipe_shaped">
                                 <div class="recipe_input">
                                     <i class="v1"></i>
@@ -69,30 +72,27 @@
                                 </div>
                             </div>    
                         </div>
-                    </div>    
-                </div>
-
-                <div class="" id="all-items">
+                    </div>
                     <form id="search-highlight" class="mb-2">
                         <input type="search" class="search form-control" id="input" placeholder="Search"/>
                     </form>
-                    <div class="crafting-app__items  vb vb-visible " id="vanila" >
-                        <div class="vb-content vanila scrollbar" id="vanilaChild" style="overflow: hidden scroll; height: 100%; width: 100%">                     
-                        </div>
-                    </div>
-                    <div class="crafting-app__items vb vb-visible" id="railcraft" style="display:none">
-                        <div class="vb-content railcraft scrollbar" style="height: 100%; width: 100% ;">
-                            <i class="crafting-app__item r1"></i>
+                    <div class="" id="all-items">
+                        <div class="crafting-app__items" id="vanila">
+                            <div class="vanila scrollbar" id="vanilaChild">
+                            </div>
+                        </div>  
+                        <div class="crafting-app__items scrollbar" id="railcraft" style="display: none;">
+                            <div class="railcraft scrollbar" id="railChild"></div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </main>
-
-    <footer class="footer">
-
-    </footer>
+        </main>
+    
+        <footer class="footer">
+    
+        </footer>
+    </div>
 
     <script src="js/select.js"></script>
     <script src="js/search.js"></script>
