@@ -20,6 +20,7 @@ body{
     color: white;
     border-radius: 5px;
     background: url(../src/box_body_background.png);
+    padding-bottom: 15px;
 }
 
 .search{
