@@ -33,6 +33,18 @@ body{
     width: 100%;
 }
 
+.select {
+    width: 100px;
+    text-align: center;
+    background-color: #232323 !important; 
+    border: 1px solid #323232 !important; 
+    box-sizing: border-box;
+    color: #d8d8d8;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
 .header{
     background-color: #1e1e1e;
     border-radius: 0 0 5px 5px;
@@ -45,11 +57,6 @@ header{
 header a img{
     width: 300px;
     height: auto;
-}
-
-.select {
-    height: 30px;
-    background-color: white;
 }
 
 .craffting-app_wrapper {
