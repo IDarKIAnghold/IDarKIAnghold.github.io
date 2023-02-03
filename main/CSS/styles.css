@@ -2,7 +2,22 @@ body{
     width: 1600;
     background: url(../src/back-ground.png);
     background-color:rgb(34, 51, 58);
+}
 
+.page{
+    background-color: #1e1e1e;
+    color: white;
+    border-radius: 5px;
+}
+
+.search{
+    background-color: #232323 !important; 
+    border: 1px solid #323232 !important; 
+    box-sizing: border-box;
+    color: #d8d8d8;
+    font-size: 12px;
+    resize: none;
+    width: 100%;
 }
 
 header{
@@ -66,7 +81,7 @@ header a img{
     top: 94px;
 }
 
-.recipe i {
+.recipe i{
     width: 42px;
     height: 42px;
     display: inline-block;
