@@ -12,7 +12,7 @@ window.onload = () =>{
                         elem.classList.remove('hide');
                     }
             });
-        } else {
+        } else{
             item.forEach(elem =>
                 elem.classList.remove('hide')
         )}
