@@ -238,11 +238,6 @@ header a img{
     height: 520px;
 }
 
-/* #vanilaChild {
-    display: flex;
-    flex-wrap: wrap;
-} */
-
 .crafting-app__item{
     position: relative;
     display: inline-block;
@@ -250,6 +245,7 @@ header a img{
     height: 44px;
     cursor: pointer;
     transition: .3s ease-in-out;
+    margin-bottom:-6px;
 }
 
 .crafting-app__items i{
