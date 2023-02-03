@@ -3058,6 +3058,7 @@ crafting_dbv = {
 
 
 const ElemBody = document.getElementById('vanilaChild')
+const setItemTitle = document.getElementById('setItemTitle')
 
 Object.keys(crafting_dbv).forEach(function(key) {
     const iElem = document.createElement('i')
@@ -3065,6 +3066,11 @@ Object.keys(crafting_dbv).forEach(function(key) {
     iElem.title = crafting_dbv[key].name;
     if(crafting_dbv[key].recipes == ''){iElem.style.display = "none"}
 
+    
+    iElem.onclick = function(even){
+    setItemTitle.textContent = crafting_dbv[key].name
+    }
+    
     ElemBody.appendChild(iElem)
 });
   
