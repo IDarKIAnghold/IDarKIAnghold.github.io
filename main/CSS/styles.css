@@ -8,6 +8,7 @@ body{
     background-color: #1e1e1e;
     color: white;
     border-radius: 5px;
+    background: url(../src/box_body_background.png);
 }
 
 .search{
@@ -68,6 +69,7 @@ header a img{
     height: 132px;
     float: left;
 }
+
 .recipe_output {
     position: relative;
 }
@@ -91,17 +93,36 @@ header a img{
     position: relative;
 }
 
-.recipe i:before {
+.recipe_input i:before {
     top: 5px;
     left: 5px;
 }
 
-.recipe_output i {
+.crafting-app__items i{
+    width: 42px;
+    height: 42px;
+    display: inline-block;
+    background-color: #8b8b8b;
+    margin: 1px;
+    position: relative;
+}
+
+.crafting-app__items i::before{
+    top: 5px;
+    left: 5px;
+}
+
+.recipe_output i{
     width: 52px;
     height: 52px;
     position: absolute;
     top: 40px;
     right: 0;
+}
+
+.recipe_output i::before{
+    top: 10px;
+    left: 10px;
 }
 
 .recipe_output i::after {
@@ -122,6 +143,7 @@ header a img{
     top: 76px;
     left: 7px;
 }
+
 .recipe_smelting:before{
     color: #404040;
     font-size: 16px;
@@ -210,10 +232,6 @@ header a img{
 .crafting-app__items{
     height: 520px;
     width: 100%;
-}
-
-.crafting-app .vb .vb-content {
-    padding-right: 10px;
 }
 
 .crafting-app__item{
