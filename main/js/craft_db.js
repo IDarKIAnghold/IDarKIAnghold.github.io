@@ -3063,6 +3063,7 @@ const ElemBody = document.getElementById('vanilaChild')
 Object.keys(crafting_db).forEach(function(key) {
     const iElem = document.createElement('i')
     iElem.className = `crafting-app__item v${crafting_db[key].id}`
+    iElem.title = crafting_db[key].name;
     ElemBody.appendChild(iElem)
 });
   
