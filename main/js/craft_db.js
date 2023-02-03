@@ -3054,21 +3054,14 @@ crafting_db = {
     1139: { id: "1139", type: "minecraft:green_candle", name: "\u0417\u0435\u043b\u0451\u043d\u0430\u044f \u0441\u0432\u0435\u0447\u0430", tab: "1", recipes: [{ type: "shapeless", count: "1", input: [[{ index: "1125", count: "1" }], [{ index: "862", count: "1" }]] }] }, 1140: { id: "1140", type: "minecraft:red_candle", name: "\u041a\u0440\u0430\u0441\u043d\u0430\u044f \u0441\u0432\u0435\u0447\u0430", tab: "1", recipes: [{ type: "shapeless", count: "1", input: [[{ index: "1125", count: "1" }], [{ index: "863", count: "1" }]] }] }, 1141: {
         id: "1141", type: "minecraft:black_candle",
         name: "\u0427\u0451\u0440\u043d\u0430\u044f \u0441\u0432\u0435\u0447\u0430", tab: "1", recipes: [{ type: "shapeless", count: "1", input: [[{ index: "1125", count: "1" }], [{ index: "864", count: "1" }]] }]
-    }, 1142: { id: "1142", type: "minecraft:small_amethyst_bud", name: "\u041c\u0430\u043b\u044b\u0439 \u0430\u043c\u0435\u0442\u0438\u0441\u0442\u043e\u0432\u044b\u0439 \u0431\u0443\u0442\u043e\u043d", tab: "1", recipes: [] }, 1143: {
-        id: "1143", type: "minecraft:medium_amethyst_bud", name: "\u0421\u0440\u0435\u0434\u043d\u0438\u0439 \u0430\u043c\u0435\u0442\u0438\u0441\u0442\u043e\u0432\u044b\u0439 \u0431\u0443\u0442\u043e\u043d",
-        tab: "1", recipes: []
-    }, 1144: { id: "1144", type: "minecraft:large_amethyst_bud", name: "\u0411\u043e\u043b\u044c\u0448\u043e\u0439 \u0430\u043c\u0435\u0442\u0438\u0441\u0442\u043e\u0432\u044b\u0439 \u0431\u0443\u0442\u043e\u043d", tab: "1", recipes: [] }, 
-        1145: { id: "1145", type: "minecraft:amethyst_cluster", name: "\u0410\u043c\u0435\u0442\u0438\u0441\u0442\u043e\u0432\u0430\u044f \u0434\u0440\u0443\u0437\u0430", tab: "1", recipes: [] }, 
-        1146: {id: "1146", type: "minecraft:pointed_dripstone", name: "\u041a\u0430\u043f\u0435\u043b\u044c\u043d\u0438\u043a",tab: "1", recipes: []
-    }, 1147: { id: "1147", type: "minecraft:ochre_froglight", name: "\u041e\u0445\u0440\u0438\u0441\u0442\u0430\u044f \u043a\u0432\u0430\u043c\u043f\u0430", tab: "1", recipes: [] }, 1148: { id: "1148", type: "minecraft:verdant_froglight", name: "\u041c\u0430\u043b\u0430\u0445\u0438\u0442\u043e\u0432\u0430\u044f \u043a\u0432\u0430\u043c\u043f\u0430", tab: "1", recipes: [] }, 1149: {
-        id: "1149", type: "minecraft:pearlescent_froglight", name: "\u041f\u0435\u0440\u043b\u0430\u043c\u0443\u0442\u0440\u043e\u0432\u0430\u044f \u043a\u0432\u0430\u043c\u043f\u0430",
-        tab: "1", recipes: []
-    }, 1150: { id: "1150", type: "minecraft:frogspawn", name: "\u041b\u044f\u0433\u0443\u0448\u0430\u0447\u044c\u044f \u0438\u043a\u0440\u0430", tab: "6", recipes: [] }, 
-        1151: { id: "1151", type: "minecraft:echo_shard", name: "\u041e\u0441\u043a\u043e\u043b\u043e\u043a \u044d\u0445\u0430", tab: "6", recipes: [] }
+    }, 
 };
 
-Object.keys(crafting_db).forEach(function(key, index) {
-    // console.log(crafting_db[key].id)
-    // console.log(crafting_db[key].name)
+const ElemBody = document.getElementById('vanilaChild')
+
+Object.keys(crafting_db).forEach(function(key) {
+    const iElem = document.createElement('i')
+    iElem.className = `crafting-app__item v${crafting_db[key].id}`
+    ElemBody.appendChild(iElem)
 });
   

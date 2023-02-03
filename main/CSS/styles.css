@@ -4,6 +4,17 @@ body{
     background-color:rgb(34, 51, 58);
 }
 
+.scrollbar {
+    scrollbar-width: auto;
+    scrollbar-color: transparent rgb(139, 139, 139);
+}
+
+.scrollbar::-webkit-scrollbar {width: 12px}
+
+.scrollbar::-webkit-scrollbar-track {background: transparent}
+
+.scrollbar::-webkit-scrollbar-thumb {background-color: rgb(139, 139, 139)}
+
 .page{
     background-color: #1e1e1e;
     color: white;
@@ -221,13 +232,19 @@ header a img{
 }
 
 .crafting-app__items{
+    display: flex;
+    justify-content: center;
     height: 520px;
-    width: 100%;
+    position: relative;
+}
+#vanilaChild {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .crafting-app__item{
     position: relative;
-    display: inline-block;
+    display: block;
     width: 44px;
     height: 44px;
     cursor: pointer;

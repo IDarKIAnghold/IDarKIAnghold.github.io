@@ -116,26 +116,20 @@
                         </div>
                     </div>    
                 </div>
-                
-                <script src="js/craft_db.js"></script>
-
                 <div class="" id="all-items">
 
                     <form id="search-highlight" class="mb-2">
                         <input type="search" class="search form-control" id="input" placeholder="Search"/>
                     </form>
 
-                    <div class="crafting-app__items vb vb-visible" id="vanila" style="display:block; position: relative;">
-                        <div class="vb-content vanila" style="display: block; overflow: hidden scroll; height: 100%; width: calc(100% + 15px);">
-                            <i class="crafting-app__item"></i>                        
+                    <div class="crafting-app__items vb vb-visible" id="vanila">
+                        <div class="vanila scrollbar" id="vanilaChild" style="overflow: hidden scroll; height: 100%; width: calc(100% + 15px);">                     
                         </div>
                     </div>
 
-                    <div class="crafting-app__items vb vb-visible" id="railcraft" style="display:none">
+                    <div class="crafting-app__items vb vb-visible scrollbar" id="railcraft" style="display:none">
                         <div class="vb-content railcraft" style="height: 100%; width: 100% ;">
-                            <i class="crafting-app__item"></i>
                         </div>
-
                     </div>
 
                 </div>
@@ -149,7 +143,7 @@
 
     <script src="js/select.js"></script>
     <script src="js/search.js"></script>
-
+    <script src="js/craft_db.js"></script>
 </body>
 
 </html>
