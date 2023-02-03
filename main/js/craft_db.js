@@ -3057,6 +3057,7 @@ crafting_db = {
     }, 
 };
 
+
 const ElemBody = document.getElementById('vanilaChild')
 
 Object.keys(crafting_db).forEach(function(key) {
