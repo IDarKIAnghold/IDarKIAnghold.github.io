@@ -1,4 +1,4 @@
-.railcraft i:before{
+.crafting-app_recipe i::before, .railcraft i:before{
     width: 32px;
     height: 32px;
     position: absolute;
