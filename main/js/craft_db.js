@@ -3068,7 +3068,7 @@ crafting_db = {
 };
 
 Object.keys(crafting_db).forEach(function(key, index) {
-    // console.log(crafting_db[key].id)
-    // console.log(crafting_db[key].name)
+    console.log(crafting_db[key].id)
+    console.log(crafting_db[key].name)
 });
   
