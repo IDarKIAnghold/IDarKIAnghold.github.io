@@ -1,5 +1,4 @@
 body{
-    width: 1600;
     background: url(../src/back-ground.png);
     background-color:rgb(34, 51, 58);
 }
@@ -243,7 +242,7 @@ i.crafting-app__item:hover{
 }
 
 .crafting-app__title {
-    color: #fff;
+    color: whitesmoke;
     font-family: Arial;
     font-size: 20px;
     line-height: 100%;
