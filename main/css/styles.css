@@ -31,7 +31,7 @@ body{
 
 .search{
     background-color: #232323 !important; 
-    border: 1px solid #323232 !important; 
+    border: 1px solid #949292 !important; 
     box-sizing: border-box;
     color: #d8d8d8;
     font-size: 12px;
@@ -43,7 +43,7 @@ body{
     width: 100px;
     text-align: center;
     background-color: #232323 !important; 
-    border: 1px solid #323232 !important; 
+    border: 1px solid #949292 !important; 
     box-sizing: border-box;
     color: #d8d8d8;
     -moz-appearance: none;
@@ -242,9 +242,12 @@ i.crafting-app__item:hover{
     background-color: #333
 }
 
-.crafting-app__title {
+#crafting-app__title {
+    display: flex;
+    justify-content: center;
     color: whitesmoke;
     font-family: Arial;
+    height: 22px;
     font-size: 20px;
     line-height: 100%;
     margin-bottom: 10px;

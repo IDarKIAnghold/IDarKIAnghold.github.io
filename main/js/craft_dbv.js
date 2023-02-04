@@ -3058,16 +3058,15 @@ crafting_dbv = {
 
 
 const ElemBody = document.getElementById('vanilaChild')
-const setItemTitle = document.getElementById('setItemTitle')
+const setItemTitle = document.getElementById('crafting-app__title')
 
 Object.keys(crafting_dbv).forEach(function(key) {
-    const iElem = document.createElement('i')
+    const iElem = document.createElement('i');
     iElem.className = `crafting-app__item v${crafting_dbv[key].id}`
     iElem.title = crafting_dbv[key].name;
 
     if(crafting_dbv[key].recipes == ''){iElem.style.display = "none"}
-    
-    iElem.onclick = function(even){setItemTitle.textContent = crafting_dbv[key].name; }
+    iElem.onclick = function(even){setItemTitle.textContent = "Крафт предмета " + crafting_dbv[key].name; }
     
     ElemBody.appendChild(iElem)
 });
