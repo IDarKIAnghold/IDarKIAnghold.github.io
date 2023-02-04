@@ -3044,10 +3044,8 @@ crafting_dbv = {
             type: "shapeless", count: "1", input: [[{ index: "1125", count: "1" }],
             [{ index: "857", count: "1" }]]
         }]
-    }, 1135: { id: "1135", type: "minecraft:cyan_candle", name: "\u0411\u0438\u0440\u044e\u0437\u043e\u0432\u0430\u044f \u0441\u0432\u0435\u0447\u0430", tab: "1", recipes: [{ type: "shapeless", count: "1", input: [[{ index: "1125", count: "1" }], [{ index: "858", count: "1" }]] }] }, 1136: {
-        id: "1136", type: "minecraft:purple_candle", name: "\u0424\u0438\u043e\u043b\u0435\u0442\u043e\u0432\u0430\u044f \u0441\u0432\u0435\u0447\u0430", tab: "1", recipes: [{
-            type: "shapeless", count: "1", input: [[{ index: "1125", count: "1" }],
-            [{ index: "859", count: "1" }]]
+    }, 1135: { id: "1135", type: "minecraft:cyan_candle", name: "\u0411\u0438\u0440\u044e\u0437\u043e\u0432\u0430\u044f \u0441\u0432\u0435\u0447\u0430", tab: "1", recipes: [{ type: "shapeless", count: "1", input: [[{ index: "1125", count: "1" }], [{ index: "858", count: "1" }]] }] }, 
+    1136: {id: "1136", type: "minecraft:purple_candle", name: "\u0424\u0438\u043e\u043b\u0435\u0442\u043e\u0432\u0430\u044f \u0441\u0432\u0435\u0447\u0430", tab: "1", recipes: [{type: "shapeless", count: "1", input: [[{ index: "1125", count: "1" }],[{ index: "859", count: "1" }]]
         }]
     }, 1137: { id: "1137", type: "minecraft:blue_candle", name: "\u0421\u0438\u043d\u044f\u044f \u0441\u0432\u0435\u0447\u0430", tab: "1", recipes: [{ type: "shapeless", count: "1", input: [[{ index: "1125", count: "1" }], [{ index: "860", count: "1" }]] }] }, 1138: { id: "1138", type: "minecraft:brown_candle", name: "\u041a\u043e\u0440\u0438\u0447\u043d\u0435\u0432\u0430\u044f \u0441\u0432\u0435\u0447\u0430", tab: "1", recipes: [{ type: "shapeless", count: "1", input: [[{ index: "1125", count: "1" }], [{ index: "861", count: "1" }]] }] },
     1139: { id: "1139", type: "minecraft:green_candle", name: "\u0417\u0435\u043b\u0451\u043d\u0430\u044f \u0441\u0432\u0435\u0447\u0430", tab: "1", recipes: [{ type: "shapeless", count: "1", input: [[{ index: "1125", count: "1" }], [{ index: "862", count: "1" }]] }] }, 1140: { id: "1140", type: "minecraft:red_candle", name: "\u041a\u0440\u0430\u0441\u043d\u0430\u044f \u0441\u0432\u0435\u0447\u0430", tab: "1", recipes: [{ type: "shapeless", count: "1", input: [[{ index: "1125", count: "1" }], [{ index: "863", count: "1" }]] }] }, 1141: {
