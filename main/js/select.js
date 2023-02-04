@@ -12,13 +12,13 @@ document.getElementById("select")
     let item = document.querySelectorAll('.crafting-app__items .crafting-app__item');
     item.forEach(elem => elem.classList.remove('hide'))
     let mode = document.querySelector('.crafting-app_recipe')
-    if(c == 2){
-        mode.classList.remove('vanila');
-        mode.classList.add('railcraft')
-    }
-    else{
+    if(c == 1){
         mode.classList.remove('railcraft')
         mode.classList.add('vanila');
+    }
+    else{
+        mode.classList.remove('vanila');
+        mode.classList.add('railcraft')
     }
     console.log(c);
 };
