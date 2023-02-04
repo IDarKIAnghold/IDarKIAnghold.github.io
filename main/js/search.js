@@ -5,12 +5,12 @@ window.onload = () =>{
         let item = document.querySelectorAll('#all-items .crafting-app__item');
         if(value !=''){
             item.forEach(elem => {
-                    if(elem.getAttribute('title').search(new RegExp(value, "i")) == -1)
-                        elem.classList.add('hide');
-                    else
-                        elem.classList.remove('hide');              
+                if(elem.getAttribute('title').search(new RegExp(value, "i")) == -1)
+                    elem.classList.add('hide');
+                else
+                    elem.classList.remove('hide');              
             });
-        } else{
+        } else {
             item.forEach(elem =>
                 elem.classList.remove('hide')
         )}

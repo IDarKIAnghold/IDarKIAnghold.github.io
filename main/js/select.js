@@ -12,7 +12,6 @@ document.getElementById("select")
     let item = document.querySelectorAll('.crafting-app__items .crafting-app__item');
     item.forEach(elem => elem.classList.remove('hide'))
     let mode = document.querySelector('.crafting-app_recipe')
-    let mode_item = document.querySelector('.recipe_input i')
     if(c == 2){
         mode.classList.remove('vanila');
         mode.classList.add('railcraft')
@@ -21,4 +20,5 @@ document.getElementById("select")
         mode.classList.remove('railcraft')
         mode.classList.add('vanila');
     }
+    console.log(c);
 };
