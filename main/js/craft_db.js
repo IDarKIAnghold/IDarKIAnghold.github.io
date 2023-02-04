@@ -3067,7 +3067,7 @@ Object.keys(crafting_dbv).forEach(function(key) {
 
     if(crafting_dbv[key].recipes == ''){iElem.style.display = "none"}
     
-    iElem.onclick = function(even){setItemTitle.textContent = crafting_dbv[key].name}
+    iElem.onclick = function(even){setItemTitle.textContent = crafting_dbv[key].name; }
     
     ElemBody.appendChild(iElem)
 });
