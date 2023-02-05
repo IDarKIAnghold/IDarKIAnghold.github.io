@@ -29,7 +29,7 @@
 }
 
 .crafting-app__item{
-    display: inline-block;
+    display: inline-flex;
     position: relative;
     cursor: pointer;
     transition: .3s ease-in-out;

@@ -65,11 +65,3 @@ header a img{
     width: 300px;
     height: auto;
 }
-
-.is_active{
-    display: flex;
-}
-
-.hide{
-    display: none;
-}
