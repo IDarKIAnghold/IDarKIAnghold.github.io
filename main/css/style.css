@@ -1,0 +1,93 @@
+body{
+    background: url(../src/back-ground.png);
+    background-color:rgb(34, 51, 58);
+}
+
+.container {
+    width: 1120px !important;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.scrollbar {
+    overflow-y: scroll;
+    height: 100%;
+    width: 100%;
+}
+
+.scrollbar::-webkit-scrollbar {width: 7px; }
+.scrollbar::-webkit-scrollbar-track {background: transparent; }
+.scrollbar::-webkit-scrollbar-thumb {background-color: rgba(68,68,68,0.91); border-radius: 10px;}
+
+.page{
+    width: 100%;
+    float: left;
+    padding-bottom: 15px;
+    font-family: Tahoma,Arial,sans-serif;
+    background: url(../SRC/box_body_background.png) #1e1e1e;
+    border-radius: 3px 3px;
+    box-shadow: 0 1px 0 0 #484848, 0 -1px 0 0 #272727, 0 2px 4px #131111;
+}
+
+.search{
+    background-color: #232323 !important; 
+    border: 1px solid #949292 !important; 
+    box-sizing: border-box;
+    color: #d8d8d8;
+    font-size: 12px;
+    resize: none;
+    width: 100%;
+}
+
+.select {
+    width: 100px;
+    text-align: center;
+    background-color: #232323 !important; 
+    border: 1px solid #949292 !important; 
+    box-sizing: border-box;
+    color: #d8d8d8;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.header{
+    background-color: #1e1e1e;
+    border-radius: 0 0 5px 5px;
+    width: 100%;
+}
+
+header{
+    height: 73px;
+}
+
+header a img{
+    width: 300px;
+    height: auto;
+}
+
+.craffting-app_wrapper {
+    margin: 15px 0;
+    overflow: hidden;
+    height: auto;
+}
+
+.crafting-app__recipe {
+    overflow: hidden;
+    height: 152px;
+}
+
+#crafting-app__title {
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    font-family: Arial;
+    height: 22px;
+    font-size: 20px;
+    line-height: 100%;
+    margin-bottom: 10px;
+}
+
+.hide{
+    display: none;
+}

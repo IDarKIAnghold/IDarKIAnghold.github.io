@@ -1,23 +1,13 @@
 crafting_dbv = {
     1: { id: "1", type: "minecraft:stone", name: "\u041a\u0430\u043c\u0435\u043d\u044c", recipes: [{ type: "smelting", count: "1", input: [[{ index: "22", count: "1" }]] }] }, 
-    2: { id: "2", type: "minecraft:granite", name: "\u0413\u0440\u0430\u043d\u0438\u0442", recipes: [{ type: "shapeless", count: "1", input: [[{ index: "4", count: "1" }], [{ index: "725", count: "1" }]] }] }, 3: {
-        id: "3", type: "minecraft:polished_granite", name: "\u041f\u043e\u043b\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0439 \u0433\u0440\u0430\u043d\u0438\u0442", recipes: [{
-            type: "shaped",
-            count: "4", input: [[{ index: "2", count: "1" }], [{ index: "2", count: "1" }], [{ index: "2", count: "1" }], [{ index: "2", count: "1" }]], width: 2, height: 2
-        }, { type: "stonecutting", count: "1", input: [[{ index: "2", count: "1" }]] }]
-    }, 4: { id: "4", type: "minecraft:diorite", name: "\u0414\u0438\u043e\u0440\u0438\u0442", recipes: [{ type: "shaped", count: "2", input: [[{ index: "22", count: "1" }], [{ index: "725", count: "1" }], [{ index: "725", count: "1" }], [{ index: "22", count: "1" }]], width: 2, height: 2 }] }, 5: {
-        id: "5", type: "minecraft:polished_diorite", name: "\u041f\u043e\u043b\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0439 \u0434\u0438\u043e\u0440\u0438\u0442",
-        recipes: [{ type: "shaped", count: "4", input: [[{ index: "4", count: "1" }], [{ index: "4", count: "1" }], [{ index: "4", count: "1" }], [{ index: "4", count: "1" }]], width: 2, height: 2 }, { type: "stonecutting", count: "1", input: [[{ index: "4", count: "1" }]] }]
-    }, 6: { id: "6", type: "minecraft:andesite", name: "\u0410\u043d\u0434\u0435\u0437\u0438\u0442", recipes: [{ type: "shapeless", count: "2", input: [[{ index: "4", count: "1" }], [{ index: "22", count: "1" }]] }] }, 7: {
-        id: "7", type: "minecraft:polished_andesite", name: "\u041f\u043e\u043b\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0439 \u0430\u043d\u0434\u0435\u0437\u0438\u0442",
-        recipes: [{ type: "shaped", count: "4", input: [[{ index: "6", count: "1" }], [{ index: "6", count: "1" }], [{ index: "6", count: "1" }], [{ index: "6", count: "1" }]], width: 2, height: 2 }, { type: "stonecutting", count: "1", input: [[{ index: "6", count: "1" }]] }]
-    }, 8: { id: "8", type: "minecraft:deepslate", name: "\u0413\u043b\u0443\u0431\u0438\u043d\u043d\u044b\u0439 \u0441\u043b\u0430\u043d\u0435\u0446", recipes: [{ type: "smelting", count: "1", input: [[{ index: "9", count: "1" }]] }] }, 9: {
-        id: "9", type: "minecraft:cobbled_deepslate", name: "\u041a\u043e\u043b\u043e\u0442\u044b\u0439 \u0433\u043b\u0443\u0431\u0438\u043d\u043d\u044b\u0439 \u0441\u043b\u0430\u043d\u0435\u0446",
-        recipes: []
-    }, 10: { id: "10", type: "minecraft:polished_deepslate", name: "\u041f\u043e\u043b\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0439 \u0433\u043b\u0443\u0431\u0438\u043d\u043d\u044b\u0439 \u0441\u043b\u0430\u043d\u0435\u0446", recipes: [{ type: "shaped", count: "4", input: [[{ index: "9", count: "1" }], [{ index: "9", count: "1" }], [{ index: "9", count: "1" }], [{ index: "9", count: "1" }]], width: 2, height: 2 }, { type: "stonecutting", count: "1", input: [[{ index: "9", count: "1" }]] }] }, 11: {
-        id: "11", type: "minecraft:calcite", name: "\u041a\u0430\u043b\u044c\u0446\u0438\u0442",
-        recipes: []
-    }, 12: { id: "12", type: "minecraft:tuff", name: "\u0422\u0443\u0444", recipes: [] }, 13: { id: "13", type: "minecraft:dripstone_block", name: "\u041d\u0430\u0442\u0451\u0447\u043d\u044b\u0439 \u043a\u0430\u043c\u0435\u043d\u044c", recipes: [{ type: "shaped", count: "1", input: [[{ index: "1146", count: "1" }], [{ index: "1146", count: "1" }], [{ index: "1146", count: "1" }], [{ index: "1146", count: "1" }]], width: 2, height: 2 }] }, 14: { id: "14", type: "minecraft:grass_block", name: "\u0414\u0451\u0440\u043d", recipes: [] }, 15: {
+    2: { id: "2", type: "minecraft:granite", name: "\u0413\u0440\u0430\u043d\u0438\u0442", recipes: [{ type: "shapeless", count: "1", input: [[{ index: "4", count: "1" }], [{ index: "725", count: "1" }]] }] }, 
+    3: { id: "3", type: "minecraft:polished_granite", name: "\u041f\u043e\u043b\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0439 \u0433\u0440\u0430\u043d\u0438\u0442", recipes: [{type: "shaped",count: "4", input: [[{ index: "2", count: "1" }], [{ index: "2", count: "1" }], [{ index: "2", count: "1" }], [{ index: "2", count: "1" }]], width: 2, height: 2}, { type: "stonecutting", count: "1", input: [[{ index: "2", count: "1" }]] }]}, 
+    4: { id: "4", type: "minecraft:diorite", name: "\u0414\u0438\u043e\u0440\u0438\u0442", recipes: [{ type: "shaped", count: "2", input: [[{ index: "22", count: "1" }], [{ index: "725", count: "1" }], [{ index: "725", count: "1" }], [{ index: "22", count: "1" }]], width: 2, height: 2 }] }, 
+    5: { id: "5", type: "minecraft:polished_diorite", name: "\u041f\u043e\u043b\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0439 \u0434\u0438\u043e\u0440\u0438\u0442",recipes: [{ type: "shaped", count: "4", input: [[{ index: "4", count: "1" }], [{ index: "4", count: "1" }], [{ index: "4", count: "1" }], [{ index: "4", count: "1" }]], width: 2, height: 2 }, { type: "stonecutting", count: "1", input: [[{ index: "4", count: "1" }]] }]}, 
+    6: { id: "6", type: "minecraft:andesite", name: "\u0410\u043d\u0434\u0435\u0437\u0438\u0442", recipes: [{ type: "shapeless", count: "2", input: [[{ index: "4", count: "1" }], [{ index: "22", count: "1" }]] }] }, 7: {id: "7", type: "minecraft:polished_andesite", name: "\u041f\u043e\u043b\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0439 \u0430\u043d\u0434\u0435\u0437\u0438\u0442", recipes: [{ type: "shaped", count: "4", input: [[{ index: "6", count: "1" }], [{ index: "6", count: "1" }], [{ index: "6", count: "1" }], [{ index: "6", count: "1" }]], width: 2, height: 2 }, { type: "stonecutting", count: "1", input: [[{ index: "6", count: "1" }]] }]}, 
+    8: { id: "8", type: "minecraft:deepslate", name: "\u0413\u043b\u0443\u0431\u0438\u043d\u043d\u044b\u0439 \u0441\u043b\u0430\u043d\u0435\u0446", recipes: [{ type: "smelting", count: "1", input: [[{ index: "9", count: "1" }]] }] }, 9: { id: "9", type: "minecraft:cobbled_deepslate", name: "\u041a\u043e\u043b\u043e\u0442\u044b\u0439 \u0433\u043b\u0443\u0431\u0438\u043d\u043d\u044b\u0439 \u0441\u043b\u0430\u043d\u0435\u0446",recipes: []}, 
+    10: { id: "10", type: "minecraft:polished_deepslate", name: "\u041f\u043e\u043b\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0439 \u0433\u043b\u0443\u0431\u0438\u043d\u043d\u044b\u0439 \u0441\u043b\u0430\u043d\u0435\u0446", recipes: [{ type: "shaped", count: "4", input: [[{ index: "9", count: "1" }], [{ index: "9", count: "1" }], [{ index: "9", count: "1" }], [{ index: "9", count: "1" }]], width: 2, height: 2 }, { type: "stonecutting", count: "1", input: [[{ index: "9", count: "1" }]] }] }, 11: {id: "11", type: "minecraft:calcite", name: "\u041a\u0430\u043b\u044c\u0446\u0438\u0442",recipes: []}, 
+    12: { id: "12", type: "minecraft:tuff", name: "\u0422\u0443\u0444", recipes: [] }, 13: { id: "13", type: "minecraft:dripstone_block", name: "\u041d\u0430\u0442\u0451\u0447\u043d\u044b\u0439 \u043a\u0430\u043c\u0435\u043d\u044c", recipes: [{ type: "shaped", count: "1", input: [[{ index: "1146", count: "1" }], [{ index: "1146", count: "1" }], [{ index: "1146", count: "1" }], [{ index: "1146", count: "1" }]], width: 2, height: 2 }] }, 14: { id: "14", type: "minecraft:grass_block", name: "\u0414\u0451\u0440\u043d", recipes: [] }, 15: {
         id: "15", type: "minecraft:dirt",
         name: "\u0417\u0435\u043c\u043b\u044f", recipes: []
     }, 16: { id: "16", type: "minecraft:coarse_dirt", name: "\u041a\u0430\u043c\u0435\u043d\u0438\u0441\u0442\u0430\u044f \u0437\u0435\u043c\u043b\u044f", recipes: [{ type: "shaped", count: "4", input: [[{ index: "15", count: "1" }], [{ index: "42", count: "1" }], [{ index: "42", count: "1" }], [{ index: "15", count: "1" }]], width: 2, height: 2 }] }, 17: { id: "17", type: "minecraft:podzol", name: "\u041f\u043e\u0434\u0437\u043e\u043b", recipes: [] }, 18: {
@@ -3057,7 +3047,6 @@ crafting_dbv = {
 
 const ElemBody = document.getElementById('vanilaChild')
 const setItemTitle = document.getElementById('crafting-app__title')
-const UI =  document.getElementById('smelting')
 
 Object.keys(crafting_dbv).forEach(function(key) {
     const iElem = document.createElement('i');
@@ -3070,7 +3059,6 @@ Object.keys(crafting_dbv).forEach(function(key) {
     setItemTitle.textContent = "Крафт предмета "; 
     iElem.onclick = function(even){
         setItemTitle.textContent = "Крафт предмета " + crafting_dbv[key].name;
-
     }
     
     ElemBody.appendChild(iElem)
