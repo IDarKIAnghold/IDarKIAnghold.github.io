@@ -3054,7 +3054,7 @@ Object.keys(crafting_dbv).forEach(function(key) {
     iElem.title = crafting_dbv[key].name;
     iElem.id = crafting_dbv[key].type;
 
-    if(crafting_dbv[key].recipes == ''){iElem.classList.add("hide")}
+    if(crafting_dbv[key].recipes == ''){iElem.style.display = "none"}
     
     setItemTitle.textContent = "Крафт предмета "; 
     iElem.onclick = function(even){

@@ -1,7 +1,6 @@
 .recipe {
     height: 152px;
     padding: 10px;
-    display: inline-block;
     overflow: hidden;
     background: #c7c7c7;
     border: 1px solid #c3baba;
@@ -10,6 +9,7 @@
     line-height: 0;
     float: left;
     position: relative;
+
 }
 
 .recipe_input, .recipe_output {
@@ -131,32 +131,4 @@
     position: absolute;
     top: 56px;
     left: 105px;
-}
-
-.crafting-app__items{
-    position: relative; 
-    overflow: hidden;
-    height: 515px;
-    width: 100%;
-    border-radius: 3px 3px;
-}
-
-.crafting-app__item{
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-    transition: .3s ease-in-out;
-    margin-bottom:-6px;
-    width: 44px;
-    height: 44px;
-    
-}
-
-.crafting-app__items i::before{
-    top: 6px;
-    left: 6px;
-}
-
-i.crafting-app__item:hover{
-    background-color: #333
 }

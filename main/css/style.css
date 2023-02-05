@@ -66,26 +66,8 @@ header a img{
     height: auto;
 }
 
-.craffting-app_wrapper {
-    margin: 15px 0;
-    overflow: hidden;
-    height: auto;
-}
-
-.crafting-app__recipe {
-    overflow: hidden;
-    height: 152px;
-}
-
-#crafting-app__title {
+.is_active{
     display: flex;
-    justify-content: center;
-    color: whitesmoke;
-    font-family: Arial;
-    height: 22px;
-    font-size: 20px;
-    line-height: 100%;
-    margin-bottom: 10px;
 }
 
 .hide{
