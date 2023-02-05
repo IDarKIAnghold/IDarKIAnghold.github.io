@@ -3048,6 +3048,7 @@ crafting_dbv = {
 
 const ElemBody = document.getElementById('vanilaChild')
 const setItemTitle = document.getElementById('crafting-app__title')
+const crafting = document.getElementById('crafting-app')
 
 Object.keys(crafting_dbv).forEach(function(key) {
     const iElem = document.createElement('i');
@@ -3055,11 +3056,14 @@ Object.keys(crafting_dbv).forEach(function(key) {
     iElem.title = crafting_dbv[key].name;
     
     if(crafting_dbv[key].recipes == ''){iElem.style.display = "none"}
-    
-    setItemTitle.textContent = "Крафт предмета "; 
+    setItemTitle.textContent = `Крафт предмета`; 
+    let UI = document.querySelectorAll('.recipe')
     iElem.onclick = function(even){
         setItemTitle.textContent = "Крафт предмета " + crafting_dbv[key].name;
-        console.log(crafting_dbv[key].recipes[0].input);
+        console.log(crafting_dbv[key].tab);
+        if(crafting_dbv[key].recipes[0].type === "smelting"){
+            
+        }
     }   
     
     ElemBody.appendChild(iElem)
