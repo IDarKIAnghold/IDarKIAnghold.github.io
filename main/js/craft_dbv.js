@@ -3055,8 +3055,7 @@ Object.keys(crafting_dbv).forEach(function(key) {
     const iElem = document.createElement('i');
     iElem.className = `crafting-app__item v${crafting_dbv[key].id}`
     iElem.title = crafting_dbv[key].name;
-    iElem.id = crafting_dbv[key].type;
-
+    
     if(crafting_dbv[key].recipes == ''){iElem.style.display = "none"}
     
     setItemTitle.textContent = "Крафт предмета "; 
