@@ -1,0 +1,49 @@
+.craffting-app_wrapper {
+    margin: 15px 0;
+    overflow: hidden;
+    height: auto;
+}
+
+.crafting-app__recipe {
+    overflow: hidden;
+    height: 152px;
+}
+
+#crafting-app__title {
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    font-family: Arial;
+    height: 22px;
+    font-size: 20px;
+    line-height: 100%;
+    margin-bottom: 10px;
+}
+
+.crafting-app__items{
+    position: relative; 
+    overflow: hidden;
+    height: 515px;
+    width: 100%;
+    border-radius: 3px 3px;
+}
+
+.crafting-app__item{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    margin-bottom:-6px;
+    width: 44px;
+    height: 44px;
+    
+}
+
+.crafting-app__items i::before{
+    top: 6px;
+    left: 6px;
+}
+
+i.crafting-app__item:hover{
+    background-color: #333
+}
