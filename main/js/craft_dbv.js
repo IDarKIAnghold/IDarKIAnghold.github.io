@@ -31,7 +31,8 @@ crafting_dbv = {
     }, 31: { id: "31", type: "minecraft:warped_planks", name: "\u0418\u0441\u043a\u0430\u0436\u0451\u043d\u043d\u044b\u0435 \u0434\u043e\u0441\u043a\u0438", recipes: [{ type: "shapeless", count: "4", input: [[{ index: "114", count: "1" }, { index: "123", count: "1" }, { index: "141", count: "1" }, { index: "132", count: "1" }]] }] }, 32: {
         id: "32", type: "minecraft:oak_sapling", name: "\u0421\u0430\u0436\u0435\u043d\u0435\u0446 \u0434\u0443\u0431\u0430",
         tab: "1", recipes: []
-    }, 33: { id: "33", type: "minecraft:spruce_sapling", name: "\u0421\u0430\u0436\u0435\u043d\u0435\u0446 \u0435\u043b\u0438", tab: "1", recipes: [] }, 34: { id: "34", type: "minecraft:birch_sapling", name: "\u0421\u0430\u0436\u0435\u043d\u0435\u0446 \u0431\u0435\u0440\u0451\u0437\u044b", tab: "1", recipes: [] }, 35: {
+    }, 33: { id: "33", type: "minecraft:spruce_sapling", name: "\u0421\u0430\u0436\u0435\u043d\u0435\u0446 \u0435\u043b\u0438", tab: "1", recipes: [] }, 
+    34: { id: "34", type: "minecraft:birch_sapling", name: "\u0421\u0430\u0436\u0435\u043d\u0435\u0446 \u0431\u0435\u0440\u0451\u0437\u044b", tab: "1", recipes: [] }, 35: {
         id: "35", type: "minecraft:jungle_sapling", name: "\u0421\u0430\u0436\u0435\u043d\u0435\u0446 \u0442\u0440\u043e\u043f\u0438\u0447\u0435\u0441\u043a\u043e\u0433\u043e \u0434\u0435\u0440\u0435\u0432\u0430",
         tab: "1", recipes: []
     }, 36: { id: "36", type: "minecraft:acacia_sapling", name: "\u0421\u0430\u0436\u0435\u043d\u0435\u0446 \u0430\u043a\u0430\u0446\u0438\u0438", tab: "1", recipes: [] }, 37: { id: "37", type: "minecraft:dark_oak_sapling", name: "\u0421\u0430\u0436\u0435\u043d\u0435\u0446 \u0442\u0451\u043c\u043d\u043e\u0433\u043e \u0434\u0443\u0431\u0430", tab: "1", recipes: [] }, 38: {
@@ -3047,6 +3048,8 @@ crafting_dbv = {
 
 const ElemBody = document.getElementById('vanilaChild')
 const setItemTitle = document.getElementById('crafting-app__title')
+const crafting_app = document.getElementById('crafting-app')
+
 
 Object.keys(crafting_dbv).forEach(function(key) {
     const iElem = document.createElement('i');
@@ -3059,6 +3062,7 @@ Object.keys(crafting_dbv).forEach(function(key) {
     setItemTitle.textContent = "Крафт предмета "; 
     iElem.onclick = function(even){
         setItemTitle.textContent = "Крафт предмета " + crafting_dbv[key].name;
+
     }
     
     ElemBody.appendChild(iElem)
