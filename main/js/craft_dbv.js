@@ -1,3 +1,4 @@
+
 crafting_dbv = {
     1: { id: "1", type: "minecraft:stone", name: "\u041a\u0430\u043c\u0435\u043d\u044c", recipes: [{ type: "smelting", count: "1", input: [[{ index: "22", count: "1" }]] }] }, 
     2: { id: "2", type: "minecraft:granite", name: "\u0413\u0440\u0430\u043d\u0438\u0442", recipes: [{ type: "shapeless", count: "1", input: [[{ index: "4", count: "1" }], [{ index: "725", count: "1" }]] }] }, 
@@ -2073,7 +2074,8 @@ crafting_dbv = {
     }, 767: { id: "767", type: "minecraft:mushroom_stew", name: "\u0422\u0443\u0448\u0451\u043d\u044b\u0435 \u0433\u0440\u0438\u0431\u044b", tab: "7", recipes: [{ type: "shapeless", count: "1", input: [[{ index: "197", count: "1" }], [{ index: "198", count: "1" }], [{ index: "766", count: "1" }]] }] }, 768: { id: "768", type: "minecraft:string", name: "\u041d\u0438\u0442\u044c", tab: "6", recipes: [] }, 769: { id: "769", type: "minecraft:feather", name: "\u041f\u0435\u0440\u043e", tab: "6", recipes: [] }, 770: {
         id: "770", type: "minecraft:gunpowder",
         name: "\u041f\u043e\u0440\u043e\u0445", tab: "6", recipes: []
-    }, 771: { id: "771", type: "minecraft:wheat_seeds", name: "\u0421\u0435\u043c\u0435\u043d\u0430 \u043f\u0448\u0435\u043d\u0438\u0446\u044b", tab: "6", recipes: [] }, 772: { id: "772", type: "minecraft:wheat", name: "\u041f\u0448\u0435\u043d\u0438\u0446\u0430", tab: "6", recipes: [{ type: "shapeless", count: "9", input: [[{ index: "397", count: "1" }]] }] }, 773: {
+    }, 771: { id: "771", type: "minecraft:wheat_seeds", name: "\u0421\u0435\u043c\u0435\u043d\u0430 \u043f\u0448\u0435\u043d\u0438\u0446\u044b", tab: "6", recipes: [] }, 772: { id: "772", type: "minecraft:wheat", name: "\u041f\u0448\u0435\u043d\u0438\u0446\u0430", tab: "6", recipes: [{ type: "shapeless", count: "9", input: [[{ index: "397", count: "1" }]] }] }, 
+    773: {
         id: "773", type: "minecraft:bread", name: "\u0425\u043b\u0435\u0431", tab: "7", recipes: [{
             type: "shaped", count: "1", input: [[{
                 index: "772",
@@ -3044,14 +3046,12 @@ crafting_dbv = {
         name: "\u0427\u0451\u0440\u043d\u0430\u044f \u0441\u0432\u0435\u0447\u0430", tab: "1", recipes: [{ type: "shapeless", count: "1", input: [[{ index: "1125", count: "1" }], [{ index: "864", count: "1" }]] }]
     }, 
 };
-
-
+        
 const ElemBody = document.getElementById('vanilaChild')
 const setItemTitle = document.getElementById('crafting-app__title')
 const crafting = document.querySelector('.recipe')
 const recipe_output = document.querySelector('.recipe_output i')
-const recipe_input = document.querySelector('.recipe_input i')
-db = crafting_dbv;
+// const recipe_input = document.querySelector('.recipe_input i')
 
 Object.keys(crafting_dbv).forEach(function(key) {
     const iElem = document.createElement('i');
@@ -3073,12 +3073,13 @@ Object.keys(crafting_dbv).forEach(function(key) {
             crafting.className = `recipe recipe_${crafting_dbv[key].recipes[0].type}` 
             // recipe_input.className = 'v733'
         }
-
         recipe_output.className = (`v${crafting_dbv[key].id}`);
         recipe_output.title = crafting_dbv[key].name;
-        recipe_input.className =  (`v${crafting_dbv[key].id}`)
-        recipe_input.title = crafting_dbv[key].name;
+        // recipe_input.className =  (`v${crafting_dbv[key].id}`)
+        // recipe_input.title = crafting_dbv[key].name;
     }
     ElemBody.appendChild(iElem)
 });
-  
+
+
+

@@ -12,7 +12,11 @@
     <link rel="stylesheet" href="css/crafting-app.css">
     <link rel="stylesheet" href="css/item-v.css">
     <link rel="stylesheet" href="css/Item-r.css">
-
+    <style>
+        .hide{
+            display: none;
+        }
+    </style>
     <title>CraftMine</title>
 </head>
 
@@ -36,55 +40,23 @@
                 <div class="crafting_app">
                     <div id="crafting-app__title" class="mb-2"></div>
                     <div class="craffting-app_wrapper">
-                        <div class="crafting-app__recipe vanila d-flex  justify-content-center">
-
+                        <div class="crafting-app__recipe d-flex  justify-content-center vanila">
                             <div class="recipe">
                                 <div class="recipe_input">
-
                                 </div>
                                 <div class="recipe_output">
                                     <i></i>
                                 </div>
                             </div>
-                            <!-- <div class="recipe recipe_shaped" >
-                                <div class="recipe_input">
-                                    <i></i>
-                                    <i></i>
-                                    <i></i>
-                                    <i></i>
-                                    <i></i>
-                                    <i></i>
-                                    <i></i>
-                                    <i></i>
-                                    <i></i>
-                                </div>
-                                <div class="recipe_output">
-                                    <i class=""></i>
-                                </div>
-                            </div>
-                            <div class="recipe recipe_smelting " >
-                                <div class="recipe_input">
-                                    <i class="v720"></i>
-                                    <i class=""></i>
-                                </div>
-                                <div class="recipe_output">
-                                    <i class=""></i>
-                                </div>
-                            </div>  
-                            <div class="recipe recipe_smithing">
-                                <div class="recipe_input">
-                                    <i class="v733"></i>
-                                    <i class=""></i>
-                                </div>
-                                <div class="recipe_output">
-                                    <i class=""></i>
-                                </div>
-                            </div>     -->
                         </div>
                     </div>
+
                     <form id="search-highlight" class="mb-2">
                         <input type="search" class="search form-control" id="input" placeholder="Search"/>
                     </form>
+
+                    <div id="craffting-app__categories" ></div>
+
                     <div class="" id="all-items">
                         <div class="crafting-app__items" id="vanila">
                             <div class="vanila scrollbar" id="vanilaChild"></div>
@@ -105,6 +77,7 @@
     <script src="js/select.js"></script>
     <script src="js/search.js"></script>
     <script src="js/craft_dbv.js"></script>
+    <script src="js/categories.js"></script>
 </body>
 
 </html>

@@ -47,3 +47,20 @@
 i.crafting-app__item:hover{
     background-color: #333
 }
+
+#craffting-app__categories{
+    margin-bottom: 10px
+}
+
+.crafting-app__category{
+    color: #5791be;
+    border-bottom: 1px dashed;
+    margin-right: 7px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.crafting-app__active{
+    border-bottom: none;
+    cursor: default;
+}
