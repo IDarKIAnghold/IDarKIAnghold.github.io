@@ -11,7 +11,7 @@ categories = {
 };
 
 const categoryBody = document.getElementById('craffting-app__categories');
-let category_active = categoryBody.getElementsByClassName('crafting-app__category');
+const category_active = categoryBody.getElementsByClassName('crafting-app__category');
 
 Object.keys(categories).forEach(function(key) {
     const category = document.createElement('div');

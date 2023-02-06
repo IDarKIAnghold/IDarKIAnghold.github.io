@@ -1,4 +1,3 @@
-
 crafting_dbv = {
     1: { id: "1", type: "minecraft:stone", name: "\u041a\u0430\u043c\u0435\u043d\u044c", recipes: [{ type: "smelting", count: "1", input: [[{ index: "22", count: "1" }]] }] }, 
     2: { id: "2", type: "minecraft:granite", name: "\u0413\u0440\u0430\u043d\u0438\u0442", recipes: [{ type: "shapeless", count: "1", input: [[{ index: "4", count: "1" }], [{ index: "725", count: "1" }]] }] }, 
@@ -3046,7 +3045,7 @@ crafting_dbv = {
         name: "\u0427\u0451\u0440\u043d\u0430\u044f \u0441\u0432\u0435\u0447\u0430", tab: "1", recipes: [{ type: "shapeless", count: "1", input: [[{ index: "1125", count: "1" }], [{ index: "864", count: "1" }]] }]
     }, 
 };
-        
+
 const ElemBody = document.getElementById('vanilaChild')
 const setItemTitle = document.getElementById('crafting-app__title')
 const crafting = document.querySelector('.recipe')
@@ -3062,8 +3061,8 @@ Object.keys(crafting_dbv).forEach(function(key) {
     setItemTitle.textContent = `Крафт предмета`; 
 
     iElem.onclick = function(even){
+        console.log(crafting_dbv[key].tab);
         setItemTitle.textContent = "Крафт предмета " + crafting_dbv[key].name;
-        
         if(["smelting", "smoking", "blasting"].includes(crafting_dbv[key].recipes[0].type) ){
             crafting.className = `recipe recipe_${crafting_dbv[key].recipes[0].type}`
             // recipe_input.className = 'v720'
@@ -3078,8 +3077,11 @@ Object.keys(crafting_dbv).forEach(function(key) {
         // recipe_input.className =  (`v${crafting_dbv[key].id}`)
         // recipe_input.title = crafting_dbv[key].name;
     }
+    
     ElemBody.appendChild(iElem)
 });
+
+
 
 
 
