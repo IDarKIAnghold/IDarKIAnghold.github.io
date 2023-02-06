@@ -1,18 +1,19 @@
 import categories from "./categories.js";
-var all = document.querySelectorAll(".crafting-app__category");
+let input = document.getElementById('input');
 input.oninput = function(){
-    let value = this.value.trim();
-    let item = document.querySelectorAll('#all-items .crafting-app__item');
-    
-    if(value !=''){
-        item.forEach(elem => {
-            if(elem.getAttribute('title').search(new RegExp(value, "i")) == -1)
-                elem.classList.add('hide');
-            else
-                elem.classList.remove('hide');              
-        });
-    } else {
-        item.forEach(elem =>
-            elem.classList.remove('hide'))
-    }
+let value = this.value.trim();
+let item = document.querySelectorAll('#all-items .crafting-app__item');
+if(value !=''){
+    item.forEach(elem => {
+        if(elem.getAttribute('title').search(new RegExp(value, "i")) == -1)
+            elem.classList.add('hide');
+        else
+            elem.classList.remove('hide');              
+    });
+} else {
+    item.forEach(elem =>
+        elem.classList.remove('hide'))
+}
+current[0].className = current[0].className.replace(" category_active", "");
+this.className += " category_active";
 }

@@ -10,10 +10,11 @@ let categories = {
     9:{ id: 6, name: "Разное" }
 };
 
-export default categories;
+export default {categories, filters};
 
 const categoryBody = document.getElementById('craffting-app__categories');
 const category_active = categoryBody.getElementsByClassName('crafting-app__category');
+const input = document.getElementById('input');
 
 Object.keys(categories).forEach(function(key) {
     const category = document.createElement('div');
@@ -21,6 +22,9 @@ Object.keys(categories).forEach(function(key) {
     category.textContent = categories[key].name;
     category.className = 'crafting-app__category';
     if(categories[key].name == "Все"){category.className = 'crafting-app__category category_active'}
+    category.onclick = function(){
+      input.value = '';
+    }
     categoryBody.appendChild(category);
 })
 
