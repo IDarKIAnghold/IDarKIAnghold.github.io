@@ -11,14 +11,11 @@ document.getElementById("select")
     document.getElementById("input").value = "";
     let item = document.querySelectorAll('.crafting-app__items .crafting-app__item');
     item.forEach(elem => elem.classList.remove('hide'))
-    let mode = document.querySelector('.crafting-app__recipe')
+    let mode = document.querySelector('.crafting-app__recipe');
     if(c == 1){
-        mode.classList.remove('railcraft');
-        mode.classList.add('vanila');
+        mode.classList.replace("railcraft" , "vanila");
     }
     else{
-        mode.classList.remove('vanila');
-        mode.classList.add('railcraft');
+        mode.classList.replace("vanila" , "railcraft");
     }
-    console.log(c);
 };
