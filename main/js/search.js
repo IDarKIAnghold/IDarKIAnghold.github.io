@@ -1,4 +1,7 @@
+import categories from "./categories.js";
 let input = document.getElementById('input');
+var current = document.getElementsByClassName("category_active");
+
 input.oninput = function(){
 let value = this.value.trim();
 let item = document.querySelectorAll('#all-items .crafting-app__item');
