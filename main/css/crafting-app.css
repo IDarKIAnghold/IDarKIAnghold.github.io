@@ -53,9 +53,9 @@ i.crafting-app__item:hover{
 }
 
 .crafting-app__category{
+    border-bottom: 1px solid;
     font-size: 14px;
     color: #5791be;
-    border-bottom: 1px dashed;
     margin-right: 7px;
     display: inline-block;
     cursor: pointer;
