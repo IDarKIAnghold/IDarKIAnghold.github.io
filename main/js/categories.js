@@ -10,8 +10,6 @@ let categories = {
     9:{ id: 6, name: "Разное" }
 };
 
-export default {categories, filters};
-
 const categoryBody = document.getElementById('craffting-app__categories');
 const category_active = categoryBody.getElementsByClassName('crafting-app__category');
 const input = document.getElementById('input');

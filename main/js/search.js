@@ -1,4 +1,3 @@
-import categories from "./categories.js";
 let input = document.getElementById('input');
 input.oninput = function(){
 let value = this.value.trim();
