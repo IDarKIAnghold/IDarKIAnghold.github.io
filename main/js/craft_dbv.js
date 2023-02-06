@@ -1,4 +1,4 @@
-crafting_dbv = {
+let crafting_dbv = {
     1: { id: "1", type: "minecraft:stone", name: "\u041a\u0430\u043c\u0435\u043d\u044c", recipes: [{ type: "smelting", count: "1", input: [[{ index: "22", count: "1" }]] }] }, 
     2: { id: "2", type: "minecraft:granite", name: "\u0413\u0440\u0430\u043d\u0438\u0442", recipes: [{ type: "shapeless", count: "1", input: [[{ index: "4", count: "1" }], [{ index: "725", count: "1" }]] }] }, 
     3: { id: "3", type: "minecraft:polished_granite", name: "\u041f\u043e\u043b\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0439 \u0433\u0440\u0430\u043d\u0438\u0442", recipes: [{type: "shaped",count: "4", input: [[{ index: "2", count: "1" }], [{ index: "2", count: "1" }], [{ index: "2", count: "1" }], [{ index: "2", count: "1" }]], width: 2, height: 2}, { type: "stonecutting", count: "1", input: [[{ index: "2", count: "1" }]] }]}, 
@@ -347,7 +347,8 @@ crafting_dbv = {
     }, 203: { id: "203", type: "minecraft:nether_sprouts", name: "\u041d\u0435\u0437\u0435\u0440\u0441\u043a\u0438\u0435 \u0440\u043e\u0441\u0442\u043a\u0438", tab: "1", recipes: [] }, 204: { id: "204", type: "minecraft:weeping_vines", name: "\u041f\u043b\u0430\u043a\u0443\u0447\u0430\u044f \u043b\u043e\u0437\u0430", tab: "1", recipes: [] }, 205: {
         id: "205", type: "minecraft:twisting_vines", name: "\u0412\u044c\u044e\u0449\u0430\u044f\u0441\u044f \u043b\u043e\u0437\u0430",
         tab: "1", recipes: []
-    }, 206: { id: "206", type: "minecraft:sugar_cane", name: "\u0421\u0430\u0445\u0430\u0440\u043d\u044b\u0439 \u0442\u0440\u043e\u0441\u0442\u043d\u0438\u043a", tab: "1", recipes: [] }, 207: { id: "207", type: "minecraft:kelp", name: "\u041b\u0430\u043c\u0438\u043d\u0430\u0440\u0438\u044f", tab: "1", recipes: [] }, 208: {
+    }, 206: { id: "206", type: "minecraft:sugar_cane", name: "\u0421\u0430\u0445\u0430\u0440\u043d\u044b\u0439 \u0442\u0440\u043e\u0441\u0442\u043d\u0438\u043a", tab: "1", recipes: [] }, 207: { id: "207", type: "minecraft:kelp", name: "\u041b\u0430\u043c\u0438\u043d\u0430\u0440\u0438\u044f", tab: "1", recipes: [] }, 
+    208: {
         id: "208", type: "minecraft:moss_carpet", name: "\u041c\u043e\u0445\u043e\u0432\u043e\u0439 \u043a\u043e\u0432\u0451\u0440", tab: "1", recipes: [{
             type: "shaped", count: "3", input: [[{ index: "209", count: "1" }],
             [{ index: "209", count: "1" }]], width: 2, height: 1
@@ -3006,8 +3007,7 @@ crafting_dbv = {
         id: "1122", type: "minecraft:polished_blackstone_brick_stairs", name: "\u0421\u0442\u0443\u043f\u0435\u043d\u044c\u043a\u0438 \u0438\u0437 \u043f\u043e\u043b\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u043e-\u0447\u0435\u0440\u043d\u0438\u0442\u043d\u043e\u0433\u043e \u043a\u0438\u0440\u043f\u0438\u0447\u0430",
         recipes: [{ type: "shaped", count: "4", input: { 0: [{ index: "1120", count: "1" }], 3: [{ index: "1120", count: "1" }], 4: [{ index: "1120", count: "1" }], 6: [{ index: "1120", count: "1" }], 7: [{ index: "1120", count: "1" }], 8: [{ index: "1120", count: "1" }] }, width: 3, height: 3 }, { type: "stonecutting", count: "1", input: [[{ index: "1112", count: "1" }]] }, { type: "stonecutting", count: "1", input: [[{ index: "1120", count: "1" }]] }, { type: "stonecutting", count: "1", input: [[{ index: "1116", count: "1" }]] }]
     }, 1123: {
-        id: "1123", type: "minecraft:cracked_polished_blackstone_bricks",
-        name: "\u041f\u043e\u0442\u0440\u0435\u0441\u043a\u0430\u0432\u0448\u0438\u0435\u0441\u044f \u043f\u043e\u043b\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u043e-\u0447\u0435\u0440\u043d\u0438\u0442\u043d\u044b\u0435 \u043a\u0438\u0440\u043f\u0438\u0447\u0438", recipes: [{ type: "smelting", count: "1", input: [[{ index: "1120", count: "1" }]] }]
+        id: "1123", type: "minecraft:cracked_polished_blackstone_bricks",name: "\u041f\u043e\u0442\u0440\u0435\u0441\u043a\u0430\u0432\u0448\u0438\u0435\u0441\u044f \u043f\u043e\u043b\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u043e-\u0447\u0435\u0440\u043d\u0438\u0442\u043d\u044b\u0435 \u043a\u0438\u0440\u043f\u0438\u0447\u0438", recipes: [{ type: "smelting", count: "1", input: [[{ index: "1120", count: "1" }]] }]
     }, 1124: {
         id: "1124", type: "minecraft:respawn_anchor", name: "\u042f\u043a\u043e\u0440\u044c \u0432\u043e\u0437\u0440\u043e\u0436\u0434\u0435\u043d\u0438\u044f", tab: "1", recipes: [{
             type: "shaped",
@@ -3053,15 +3053,16 @@ const recipe_output = document.querySelector('.recipe_output i')
 // const recipe_input = document.querySelector('.recipe_input i')
 
 Object.keys(crafting_dbv).forEach(function(key) {
+    
     const iElem = document.createElement('i');
     iElem.className = `crafting-app__item v${crafting_dbv[key].id}`
     iElem.title = crafting_dbv[key].name;
-    
-    if(crafting_dbv[key].recipes == ''){iElem.style.display = "none"}
+    iElem.dataset.tab = crafting_dbv[key].tab;
     setItemTitle.textContent = `Крафт предмета`; 
 
+    if(crafting_dbv[key].recipes == ''){iElem.style.display = "none"}
+
     iElem.onclick = function(even){
-        console.log(crafting_dbv[key].tab);
         setItemTitle.textContent = "Крафт предмета " + crafting_dbv[key].name;
         if(["smelting", "smoking", "blasting"].includes(crafting_dbv[key].recipes[0].type) ){
             crafting.className = `recipe recipe_${crafting_dbv[key].recipes[0].type}`
@@ -3080,8 +3081,3 @@ Object.keys(crafting_dbv).forEach(function(key) {
     
     ElemBody.appendChild(iElem)
 });
-
-
-
-
-
