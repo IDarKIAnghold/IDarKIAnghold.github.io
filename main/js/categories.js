@@ -13,7 +13,7 @@ let categories = {
 const categoryBody = document.getElementById('craffting-app__categories'),
 category_active = categoryBody.getElementsByClassName('crafting-app__category');
 
-Object.keys(categories).forEach((key) => {
+Object.keys(categories).forEach(function(key) {
     const category = document.createElement('div');
     category.dataset.filter = categories[key].id;
     category.textContent = categories[key].name;

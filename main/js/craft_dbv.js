@@ -3052,7 +3052,7 @@ crafting = document.querySelector('.recipe'),
 recipe_output = document.querySelector('.recipe_output i')
 //recipe_input = document.querySelector('.recipe_input i')
 
-Object.keys(crafting_dbv).forEach((key) => {
+Object.keys(crafting_dbv).forEach(function(key) {
     
     const iElem = document.createElement('i');
     iElem.className = `crafting-app__item v${crafting_dbv[key].id}`
