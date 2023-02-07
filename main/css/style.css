@@ -66,3 +66,7 @@ header a img{
     width: 300px;
     height: auto;
 }
+
+.hide{
+    display: none;
+}
