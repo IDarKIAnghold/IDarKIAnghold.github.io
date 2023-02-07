@@ -10,8 +10,8 @@ let categories = {
     9:{ id: 6, name: "Разное" }
 };
 
-const categoryBody = document.getElementById('craffting-app__categories');
-const category_active = categoryBody.getElementsByClassName('crafting-app__category');
+const categoryBody = document.getElementById('craffting-app__categories'),
+category_active = categoryBody.getElementsByClassName('crafting-app__category');
 
 Object.keys(categories).forEach(function(key) {
     const category = document.createElement('div');

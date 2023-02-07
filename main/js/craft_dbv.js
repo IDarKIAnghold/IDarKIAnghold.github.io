@@ -3046,11 +3046,11 @@ let crafting_dbv = {
     }, 
 };
 
-const ElemBody = document.getElementById('vanilaChild')
-const setItemTitle = document.getElementById('crafting-app__title')
-const crafting = document.querySelector('.recipe')
-const recipe_output = document.querySelector('.recipe_output i')
-// const recipe_input = document.querySelector('.recipe_input i')
+const ElemBody = document.getElementById('vanilaChild'),
+setItemTitle = document.getElementById('crafting-app__title'),
+crafting = document.querySelector('.recipe'),
+recipe_output = document.querySelector('.recipe_output i')
+//recipe_input = document.querySelector('.recipe_input i')
 
 Object.keys(crafting_dbv).forEach(function(key) {
     
