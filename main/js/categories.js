@@ -19,31 +19,34 @@ Object.keys(categories).forEach(function(key) {
     category.textContent = categories[key].name;
     category.className = 'crafting-app__category';
     if(categories[key].name == "Все"){category.className = 'crafting-app__category category_active'}
+
     category.onclick = function(){
       input.value = '';
       for (var i = 0; i < category_active.length; i++) {
         var current = document.getElementsByClassName("category_active");
         current[0].className = current[0].className.replace(" category_active", "");
         this.className += " category_active";
-  }
+      }
     }
     categoryBody.appendChild(category);
 })
 
 const filters = document.querySelectorAll('div [data-filter]')
 for(let filter of filters){
-  filter.addEventListener('click', function(){
+  filter.addEventListener('click', () =>{
     let filterid = filter.getAttribute('data-filter');
     let allitem = document.querySelectorAll('.crafting-app__item [data-tab="' + filterid + '"]')
     let alldivs = document.querySelectorAll('.crafting-app__item')
     alldivs.forEach(function (c) {
-      if (c.getAttribute('data-tab') == filterid){
-        c.classList.remove('hide')
-      }else if(filterid == '0'){
-        c.classList.remove('hide')
-      }else{
-        c.classList.add('hide');
-      }
+    if (c.getAttribute('data-tab') == filterid){
+      c.classList.remove('hide')
+    } else if (filterid == 0){
+      c.classList.remove('hide')
+    }
+    else{
+      c.classList.add('hide');
+    }
     })
   })
+  
 }
