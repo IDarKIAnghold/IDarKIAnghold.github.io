@@ -15,7 +15,7 @@ input.oninput = function(){
     }
 }
 
-input.onclick = function(){
+input.onclick = () => {
     var current = document.getElementsByClassName("category_active");
     current[0].className = current[0].className.replace(" category_active", "");
     let item = document.querySelectorAll('#all-items .crafting-app__item');

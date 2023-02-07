@@ -1,5 +1,5 @@
 document.getElementById("select")
-.onchange = function () {
+.onchange = () => {
     var b = {
         1: "vanila",
         2: "railcraft",

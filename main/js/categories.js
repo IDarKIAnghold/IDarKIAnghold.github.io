@@ -13,7 +13,7 @@ let categories = {
 const categoryBody = document.getElementById('craffting-app__categories'),
 category_active = categoryBody.getElementsByClassName('crafting-app__category');
 
-Object.keys(categories).forEach(function(key) {
+Object.keys(categories).forEach((key) => {
     const category = document.createElement('div');
     category.dataset.filter = categories[key].id;
     category.textContent = categories[key].name;
@@ -21,17 +21,14 @@ Object.keys(categories).forEach(function(key) {
     if(categories[key].name == "Все"){category.className = 'crafting-app__category category_active'}
     category.onclick = function(){
       input.value = '';
+      for (var i = 0; i < category_active.length; i++) {
+        var current = document.getElementsByClassName("category_active");
+        current[0].className = current[0].className.replace(" category_active", "");
+        this.className += " category_active";
+  }
     }
     categoryBody.appendChild(category);
 })
-
-for (var i = 0; i < category_active.length; i++) {
-    category_active[i].addEventListener("click", function() {
-      var current = document.getElementsByClassName("category_active");
-      current[0].className = current[0].className.replace(" category_active", "");
-      this.className += " category_active";
-    });
-}
 
 const filters = document.querySelectorAll('div [data-filter]')
 for(let filter of filters){
