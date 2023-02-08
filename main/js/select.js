@@ -1,9 +1,9 @@
-    document.getElementById("select")
-    .onchange = () => {
+window.onload = () =>{
+    document.getElementById("select").onchange = e => {
         var b = {
             1: "vanila",
             2: "railcraft",
-        }, c = this.value,
+        }, c = e.target.value,
             a;
         for (a in b) document.getElementById(b[a])
         .style.display = 0 == c || c == a ? "block" : "none"
@@ -19,3 +19,5 @@
             mode.classList.replace("vanila" , "railcraft");
         }
     };
+
+}

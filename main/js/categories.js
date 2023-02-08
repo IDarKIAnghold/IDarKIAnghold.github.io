@@ -38,12 +38,9 @@ for(let filter of filters){
     let allitem = document.querySelectorAll('.crafting-app__item [data-tab="' + filterid + '"]')
     let alldivs = document.querySelectorAll('.crafting-app__item')
     alldivs.forEach(function (c) {
-    if (c.getAttribute('data-tab') == filterid){
+    if (c.getAttribute('data-tab') == filterid || filterid == 0){
       c.classList.remove('hide')
-    } else if (filterid == 0){
-      c.classList.remove('hide')
-    }
-    else{
+    } else{
       c.classList.add('hide');
     }
     })
