@@ -3050,7 +3050,7 @@ const ElemBody = document.getElementById('vanilaChild'),
 setItemTitle = document.getElementById('crafting-app__title'),
 crafting = document.querySelector('.recipe'),
 recipe_output = document.querySelector('.recipe_output i')
-//recipe_input = document.querySelector('.recipe_input i')
+// recipe_input = document.querySelector('.recipe_input i')
 
 Object.keys(crafting_dbv).forEach(function(key) {
     
@@ -3058,12 +3058,11 @@ Object.keys(crafting_dbv).forEach(function(key) {
     iElem.className = `crafting-app__item v${crafting_dbv[key].id}`
     iElem.title = crafting_dbv[key].name;
     iElem.dataset.tab = crafting_dbv[key].tab;
-    setItemTitle.textContent = `Крафт предмета`; 
 
     if(crafting_dbv[key].recipes == ''){iElem.style.display = "none"}
 
     iElem.onclick = () =>{
-        setItemTitle.textContent = "Крафт предмета " + crafting_dbv[key].name;
+        recipe_input.title = crafting_dbv[key].name;
         if(["smelting", "smoking", "blasting"].includes(crafting_dbv[key].recipes[0].type) ){
             crafting.className = `recipe recipe_${crafting_dbv[key].recipes[0].type}`
             // recipe_input.className = 'v720'
@@ -3078,6 +3077,5 @@ Object.keys(crafting_dbv).forEach(function(key) {
         // recipe_input.className =  (`v${crafting_dbv[key].id}`)
         // recipe_input.title = crafting_dbv[key].name;
     }
-    
     ElemBody.appendChild(iElem)
 });

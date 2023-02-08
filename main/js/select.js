@@ -11,13 +11,10 @@ window.onload = () =>{
         document.getElementById("input").value = "";
         let item = document.querySelectorAll('.crafting-app__items .crafting-app__item');
         item.forEach(elem => elem.classList.remove('hide'))
-        let mode = document.querySelector('.crafting-app__recipe');
-        if(c == 1){
+        let mode = document.querySelector('.crafting-app__recipe')
+        if(c == 1)
             mode.classList.replace("railcraft" , "vanila");
-        }
-        else{
+        else
             mode.classList.replace("vanila" , "railcraft");
-        }
     };
-
 }

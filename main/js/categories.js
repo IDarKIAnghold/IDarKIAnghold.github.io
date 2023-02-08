@@ -22,8 +22,8 @@ Object.keys(categories).forEach(function(key) {
 
     category.onclick = function(){
       input.value = '';
-      for (var i = 0; i < category_active.length; i++) {
-        var current = document.getElementsByClassName("category_active");
+      for (let i = 0,length = category_active.length; i < length; i++) {
+        let  current = document.getElementsByClassName("category_active");
         current[0].className = current[0].className.replace(" category_active", "");
         this.className += " category_active";
       }
@@ -38,11 +38,10 @@ for(let filter of filters){
     let allitem = document.querySelectorAll('.crafting-app__item [data-tab="' + filterid + '"]')
     let alldivs = document.querySelectorAll('.crafting-app__item')
     alldivs.forEach(function (c) {
-    if (c.getAttribute('data-tab') == filterid || filterid == 0){
+    if (c.getAttribute('data-tab') == filterid || filterid == 0)
       c.classList.remove('hide')
-    } else{
+    else
       c.classList.add('hide');
-    }
     })
   })
   
