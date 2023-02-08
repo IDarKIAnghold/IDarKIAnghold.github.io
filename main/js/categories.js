@@ -11,14 +11,14 @@ let categories = {
 };
 
 const categoryBody = document.getElementById('craffting-app__categories'),
-category_active = categoryBody.getElementsByClassName('crafting-app__category');
+category_active = categoryBody.getElementsByClassName('crafting-app__category')
 
 Object.keys(categories).forEach(function(key) {
     const category = document.createElement('div');
     category.dataset.filter = categories[key].id;
     category.textContent = categories[key].name;
     category.className = 'crafting-app__category';
-    if(categories[key].name == "Все"){category.className = 'crafting-app__category category_active'}
+    if(categories[key].name == "Все") category.classList.add('category_active')
 
     category.onclick = function(){
       input.value = '';
@@ -26,9 +26,9 @@ Object.keys(categories).forEach(function(key) {
         let  current = document.getElementsByClassName("category_active");
         current[0].className = current[0].className.replace(" category_active", "");
         this.className += " category_active";
-      }
+      };
     }
-    categoryBody.appendChild(category);
+    categoryBody.appendChild(category)
 })
 
 const filters = document.querySelectorAll('div [data-filter]')
@@ -44,5 +44,4 @@ for(let filter of filters){
       c.classList.add('hide');
     })
   })
-  
 }
