@@ -11,12 +11,22 @@ body{
 
 @media screen and (max-width: 1000px){
     .container{
-        width: 100%;
-        margin: 0 !important;
+        width: 100%!important;
+        padding: 0;
     }
 
-    #crafting-app__title{
-        height: 40px;
+    header{
+        height: auto !important;
+        width: 100% !important;
+    }
+
+    header a img{
+        width: 100% !important;
+    }
+    
+    .select{
+        width: 100% !important;
+        padding: 5px;
     }
 }
 
