@@ -24,14 +24,14 @@
     cursor: pointer;
     transition: .3s ease-in-out;
     margin-bottom:-6px;
-    width: 44px;
-    height: 44px;
+    width: 42px;
+    height: 42px;
     
 }
 
 .crafting-app__items i::before{
-    top: 6px;
-    left: 6px;
+    top: 5px;
+    left: 5px;
 }
 
 i.crafting-app__item:hover{
