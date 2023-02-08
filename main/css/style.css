@@ -4,9 +4,26 @@ body{
 }
 
 .container {
-    width: 1120px !important;
+    width: 55%;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+@media screen and (max-width: 1000px){
+    .container{
+        width: 100%;
+        margin: 0 !important;
+    }
+
+    #crafting-app__title{
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 1025px){
+    #crafting-app__title{
+        height: 40px;
+    }
 }
 
 .scrollbar {
@@ -22,7 +39,6 @@ body{
 
 .page{
     width: 100%;
-    float: left;
     padding-bottom: 15px;
     font-family: Tahoma,Arial,sans-serif;
     background: url(../SRC/box_body_background.png);
@@ -65,6 +81,7 @@ header{
 header a img{
     width: 300px;
     height: auto;
+    padding-bottom: -10px;
 }
 
 .hide{

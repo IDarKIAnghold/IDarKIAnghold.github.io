@@ -3062,7 +3062,9 @@ Object.keys(crafting_dbv).forEach(function(key) {
     else
         iElem.dataset.tab = crafting_dbv[key].tab
     if(crafting_dbv[key].recipes == '')iElem.style.display = "none"
+
     iElem.onclick = () =>{
+        setItemTitle.textContent = "Крафт предмета " + crafting_dbv[key].name
         if(["smelting", "smoking", "blasting"].includes(crafting_dbv[key].recipes[0].type) ){
             crafting.className = `recipe recipe_${crafting_dbv[key].recipes[0].type}`
             // recipe_input.className = 'v720'

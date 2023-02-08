@@ -17,7 +17,7 @@ Object.keys(categories).forEach(function(key) {
   const category = document.createElement('div')
   category.dataset.filter = categories[key].id
   category.textContent = categories[key].name
-  if(categories[key].name == "Все") 
+  if(categories[key].id == 0) 
     category.className = 'crafting-app__category category_active'
   else
     category.className = 'crafting-app__category'
