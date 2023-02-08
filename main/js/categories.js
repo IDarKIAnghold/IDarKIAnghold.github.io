@@ -3,7 +3,7 @@ let categories = {
     2:{ id: 7, name: "Еда" }, 
     3:{ id: 8, name: "Инструменты" }, 
     4:{ id: 9, name: "Оружие" }, 
-    5:{ name: "Строительные блоки" }, 
+    5:{ id: 11, name: "Строительные блоки" }, 
     6:{ id: 1, name: "Декоративные блоки" },
     7:{ id: 2, name: "Механизмы" }, 
     8:{ id: 3, name: "Транспорт" }, 
@@ -13,35 +13,28 @@ let categories = {
 const categoryBody = document.getElementById('craffting-app__categories'),
 category_active = categoryBody.getElementsByClassName('crafting-app__category')
 
+
 Object.keys(categories).forEach(function(key) {
     const category = document.createElement('div');
     category.dataset.filter = categories[key].id;
     category.textContent = categories[key].name;
     category.className = 'crafting-app__category';
     if(categories[key].name == "Все") category.classList.add('category_active')
-
     category.onclick = function(){
       input.value = '';
+
       for (let i = 0,length = category_active.length; i < length; i++) {
         let  current = document.getElementsByClassName("category_active");
         current[0].className = current[0].className.replace(" category_active", "");
         this.className += " category_active";
       };
+
+      document.querySelectorAll('.crafting-app__item').forEach(function (c) {
+        if (c.getAttribute('data-tab') == categories[key].id || categories[key].id == 0)
+          c.classList.remove('hide')
+        else
+          c.classList.add('hide');
+      })
     }
     categoryBody.appendChild(category)
 })
-
-const filters = document.querySelectorAll('div [data-filter]')
-for(let filter of filters){
-  filter.addEventListener('click', () =>{
-    let filterid = filter.getAttribute('data-filter');
-    let allitem = document.querySelectorAll('.crafting-app__item [data-tab="' + filterid + '"]')
-    let alldivs = document.querySelectorAll('.crafting-app__item')
-    alldivs.forEach(function (c) {
-    if (c.getAttribute('data-tab') == filterid || filterid == 0)
-      c.classList.remove('hide')
-    else
-      c.classList.add('hide');
-    })
-  })
-}
