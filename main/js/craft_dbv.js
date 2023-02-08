@@ -3054,13 +3054,14 @@ recipe_output = document.querySelector('.recipe_output i')
 
 Object.keys(crafting_dbv).forEach(function(key) {
     
-    const iElem = document.createElement('i');
+    const iElem = document.createElement('i')
     iElem.className = `crafting-app__item v${crafting_dbv[key].id}`
-    iElem.title = crafting_dbv[key].name;
-    iElem.dataset.tab = crafting_dbv[key].tab;
-
-    if(crafting_dbv[key].recipes == ''){iElem.style.display = "none"}
-
+    iElem.title = crafting_dbv[key].name
+    if(crafting_dbv[key].tab == undefined) 
+        iElem.dataset.tab = 11
+    else
+        iElem.dataset.tab = crafting_dbv[key].tab
+    if(crafting_dbv[key].recipes == '')iElem.style.display = "none"
     iElem.onclick = () =>{
         if(["smelting", "smoking", "blasting"].includes(crafting_dbv[key].recipes[0].type) ){
             crafting.className = `recipe recipe_${crafting_dbv[key].recipes[0].type}`
@@ -3071,8 +3072,8 @@ Object.keys(crafting_dbv).forEach(function(key) {
             crafting.className = `recipe recipe_${crafting_dbv[key].recipes[0].type}` 
             // recipe_input.className = 'v733'
         }
-        recipe_output.className = (`v${crafting_dbv[key].id}`);
-        recipe_output.title = crafting_dbv[key].name;
+        recipe_output.className = (`v${crafting_dbv[key].id}`)
+        recipe_output.title = crafting_dbv[key].name
         // recipe_input.className =  (`v${crafting_dbv[key].id}`)
         // recipe_input.title = crafting_dbv[key].name;
     }

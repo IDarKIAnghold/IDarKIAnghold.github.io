@@ -13,28 +13,27 @@ let categories = {
 const categoryBody = document.getElementById('craffting-app__categories'),
 category_active = categoryBody.getElementsByClassName('crafting-app__category')
 
-
 Object.keys(categories).forEach(function(key) {
-    const category = document.createElement('div');
-    category.dataset.filter = categories[key].id;
-    category.textContent = categories[key].name;
-    category.className = 'crafting-app__category';
-    if(categories[key].name == "Все") category.classList.add('category_active')
-    category.onclick = function(){
-      input.value = '';
-
-      for (let i = 0,length = category_active.length; i < length; i++) {
-        let  current = document.getElementsByClassName("category_active");
-        current[0].className = current[0].className.replace(" category_active", "");
-        this.className += " category_active";
-      };
-
-      document.querySelectorAll('.crafting-app__item').forEach(function (c) {
-        if (c.getAttribute('data-tab') == categories[key].id || categories[key].id == 0)
-          c.classList.remove('hide')
-        else
-          c.classList.add('hide');
-      })
+  const category = document.createElement('div')
+  category.dataset.filter = categories[key].id
+  category.textContent = categories[key].name
+  if(categories[key].name == "Все") 
+    category.className = 'crafting-app__category category_active'
+  else
+    category.className = 'crafting-app__category'
+  category.onclick = function(){
+    input.value = ''
+    for (let i = 0,length = category_active.length; i < length; i++) {
+      let  current = document.getElementsByClassName("category_active")
+      current[0].className = current[0].className.replace(" category_active", "")
+      this.className += " category_active"
     }
-    categoryBody.appendChild(category)
+    document.querySelectorAll('.crafting-app__item').forEach(function (c) {
+      if (c.getAttribute('data-tab') == categories[key].id || categories[key].id == 0)
+        c.classList.remove('hide')
+      else
+        c.classList.add('hide')
+    })
+  }
+  categoryBody.appendChild(category)
 })
