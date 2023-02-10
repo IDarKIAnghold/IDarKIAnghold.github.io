@@ -3,52 +3,6 @@ body{
     background-color:rgb(34, 51, 58);
 }
 
-.container {
-    width: 55%;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-@media screen and (max-width: 1024px){
-
-    body{
-        background: none;
-    }
-
-    .container{
-        width: 100%;
-        padding: 0;
-    }
-
-    header{
-        height: auto !important;
-        width: 100%;
-    }
-
-    header a img{
-        width: 100% !important;
-    }
-    
-    .select{
-        width: 100% !important;
-        padding: 5px;
-        text-align: center; 
-    }
-
-    .crafting-app__item{
-        width: 45px;
-        height: 45px;
-    }
-    .crafting-app__items i::before{
-        top: 6px;
-        left: 6px;
-    }
-
-    #crafting-app__title{
-        height: auto;
-    }
-}
-
 .scrollbar {
     overflow-y: scroll;
     height: 100%;
@@ -79,17 +33,7 @@ body{
     width: 100%;
 }
 
-.select {
-    width: 100px;
-    text-align: center;
-    background-color: #232323 !important; 
-    border: 1px solid #949292 !important; 
-    box-sizing: border-box;
-    color: #d8d8d8;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
-}
+
 
 .header{
     background-color: #1e1e1e;
@@ -98,7 +42,7 @@ body{
 }
 
 header{
-    height: 73px;
+    height: auto;
 }
 
 header a img{

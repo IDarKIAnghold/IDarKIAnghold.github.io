@@ -1,0 +1,38 @@
+#select{
+    width: 120px !important;
+    text-align: center;
+    box-sizing: border-box;
+    color: #d8d8d8;
+    appearance: none;
+    float: right;
+    padding: 0.5rem !important;
+    border-radius: none !important;
+}
+
+.dd-selected{
+    margin-right: 15px !important;
+    color: white !important;
+}
+
+.dd-select{
+    width: 100% !important;
+    height: 35px !important;
+    line-height: 14px !important;
+    background-color: #232323 !important; 
+    border: none !important;
+    margin-bottom: 5px !important;
+}
+
+.dd-options{
+    width: 105px !important;
+    box-shadow: none !important;
+    line-height: 16px !important;
+    border: none !important;
+    background: none !important;
+}
+
+.dd-option-selected, .dd-option{
+    color: white !important;
+    background-color: #232323 !important; 
+    margin-bottom: 1px !important;
+}

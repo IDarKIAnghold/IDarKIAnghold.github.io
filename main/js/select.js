@@ -1,20 +1,21 @@
-window.onload = () =>{
-    document.getElementById("select").onchange = e => {
-        var b = {
-            1: "vanila",
-            2: "railcraft",
-        }, c = e.target.value,
-            a;
-        for (a in b) document.getElementById(b[a])
-        .style.display = 0 == c || c == a ? "block" : "none"
-        
-        document.getElementById("input").value = "";
-        let item = document.querySelectorAll('.crafting-app__items .crafting-app__item');
-        item.forEach(elem => elem.classList.remove('hide'))
-        let mode = document.querySelector('.crafting-app__recipe')
-        if(c == 1)
-            mode.classList.replace("railcraft" , "vanila");
-        else
-            mode.classList.replace("vanila" , "railcraft");
-    };
-}
+var ddData = [
+    { text: "Vanila", value: 1,},
+    { text: "RailCraft", value: 2,}
+];
+
+import crafting_table from "./craft_dbv.js";
+
+var vanila = "<div class='scrollbar vanila' id='vanila'>"
+var railcraft = "<div class='scrollbar railcraft'id='railcraft'>"
+$('#select').ddslick({
+    data:ddData,
+    onSelected: function (e) {
+        let c = e.selectedData.value;
+        if(c==1){
+            $('#all-items').empty().append(vanila).append(crafting_table)
+        }else{ 
+            $('#all-items').empty().append(railcraft)
+        }
+        document.getElementById("input").value = "";   
+    }
+})
