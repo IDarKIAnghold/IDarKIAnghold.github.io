@@ -3047,7 +3047,7 @@ let crafting_dbv = {
 }
 
 export default function(){
-    const ElemBody = document.getElementById('vanila'),
+    const ElemBody = document.getElementById('all-items'),
     setItemTitle = document.getElementById('crafting-app__title'),
     crafting = document.querySelector('.recipe'),
     recipe_output = document.querySelector('.recipe_output i')
