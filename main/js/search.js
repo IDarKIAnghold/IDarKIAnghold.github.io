@@ -19,13 +19,8 @@ input.onclick = () => {
     let item = document.querySelectorAll('#all-items .crafting-app__item'),
     current = document.getElementsByClassName("category_active");
     current[0].className = current[0].className.replace(" category_active", "");
+    $('.crafting-app__All').addClass('category_active');
     item.forEach(elem =>{
         elem.classList.remove('hide')
-    })
-    const filters = document.querySelectorAll('div [data-filter]')
-    filters.forEach(elem =>{
-        if(elem.getAttribute('data-filter') == 0){
-            elem.classList.add('category_active')
-        }
     })
 }

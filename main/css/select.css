@@ -1,12 +1,19 @@
+@media screen and (max-width: 1000px) {
+    #select{
+        width: 100% !important;
+    }
+    .dd-options{
+        width: 95% !important;
+    }
+}
+
 #select{
-    width: 120px !important;
     text-align: center;
     box-sizing: border-box;
     color: #d8d8d8;
     appearance: none;
     float: right;
     padding: 0.5rem !important;
-    border-radius: none !important;
 }
 
 .dd-selected{
@@ -24,7 +31,6 @@
 }
 
 .dd-options{
-    width: 105px !important;
     box-shadow: none !important;
     line-height: 16px !important;
     border: none !important;

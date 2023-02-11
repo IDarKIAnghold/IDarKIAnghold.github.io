@@ -9,6 +9,7 @@ var vanila = "<div class='scrollbar vanila' id='vanila'>"
 var railcraft = "<div class='scrollbar railcraft'id='railcraft'>"
 $('#select').ddslick({
     data:ddData,
+    width: 120,
     onSelected: function (e) {
         let c = e.selectedData.value;
         if(c==1){
@@ -17,5 +18,7 @@ $('#select').ddslick({
             $('#all-items').empty().append(railcraft)
         }
         document.getElementById("input").value = ""; 
+        $('.category_active').removeClass('category_active')
+        $('.crafting-app__All').addClass('category_active');
     }
 })
