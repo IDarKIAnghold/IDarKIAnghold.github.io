@@ -1,24 +1,25 @@
 export default () =>{
-    var crafting_dbv;
+    let crafting_dbv;
     const ElemBody = document.getElementById('all-items'),
     setItemTitle = document.getElementById('crafting-app__title'),
     crafting = document.querySelector('.recipe'),
-    recipe_output = document.querySelector('.recipe_output i')
-    function getFile (crafting_dbv) {
-        var request = new XMLHttpRequest();
+    recipe_output = document.querySelector('.recipe_output i');
+
+    (function getFile (crafting_dbv) {
+        let request = new XMLHttpRequest();  
         request.open('GET', crafting_dbv);
         request.onloadend = function() {
             parse(request.responseText);
         }
         request.send();
-    }
-    (getFile('./js/crafting_dbv.json'))
+    })('./js/crafting_dbv.json')
+
     function parse(obj) {
         crafting_dbv = JSON.parse(obj);
         Object.keys(crafting_dbv).forEach(function(key) {
-            const iElem = document.createElement('i')
-            iElem.className = `crafting-app__item v${crafting_dbv[key].id}`
-            iElem.title = crafting_dbv[key].name
+            const iElem = document.createElement('i');
+            iElem.className = `crafting-app__item v${crafting_dbv[key].id}`;
+            iElem.title = crafting_dbv[key].name;
             if(crafting_dbv[key].tab == undefined) 
                 iElem.dataset.tab = 11
             else
