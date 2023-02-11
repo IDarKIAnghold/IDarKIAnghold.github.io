@@ -1,6 +1,15 @@
 @media (min-width: 1200px) {
     .container-xl{
-        max-width: 1060px !important
+        max-width: 1020px !important
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    div#crafting-app__title{
+        height: 46px;
+    }
+    .container-xl{
+        padding: 0;
     }
 }
 
@@ -33,13 +42,11 @@ body{
     background-color: #232323 !important; 
     border: 1px solid #949292 !important; 
     box-sizing: border-box;
-    color: #d8d8d8;
+    color: #d8d8d8 !important;
     font-size: 12px;
     resize: none;
     width: 100%;
 }
-
-
 
 .header{
     background-color: #1e1e1e;

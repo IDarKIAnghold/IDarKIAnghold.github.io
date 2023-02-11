@@ -3074,8 +3074,6 @@ export default function(){
             }
             recipe_output.className = (`v${crafting_dbv[key].id}`)
             recipe_output.title = crafting_dbv[key].name
-            // recipe_input.className =  (`v${crafting_dbv[key].id}`)
-            // recipe_input.title = crafting_dbv[key].name;
         }
         ElemBody.appendChild(iElem)
         if(crafting_dbv[key].recipes == '') $(iElem).remove();

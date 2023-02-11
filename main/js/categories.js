@@ -28,7 +28,7 @@ Object.keys(categories).forEach(function(key) {
       current[0].className = current[0].className.replace(" category_active", "")
       this.className += " category_active"
     }
-    document.querySelectorAll('.crafting-app__item').forEach(function (c) {
+    document.querySelectorAll('.crafting-app__item').forEach((c) =>{
       if (c.getAttribute('data-tab') == categories[key].id || categories[key].id == 0)
         $(c).removeClass('hide');
       else
