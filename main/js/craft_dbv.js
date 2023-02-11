@@ -1,6 +1,6 @@
 export default () =>{
     let crafting_dbv;
-    const ElemBody = document.getElementById('all-items'),
+    const ElemBody = document.getElementById('item-list'),
     setItemTitle = document.getElementById('crafting-app__title'),
     crafting = document.querySelector('.recipe'),
     recipe_output = document.querySelector('.recipe_output i');
