@@ -3044,7 +3044,7 @@ let crafting_dbv = {
         id: "1141", type: "minecraft:black_candle",
         name: "\u0427\u0451\u0440\u043d\u0430\u044f \u0441\u0432\u0435\u0447\u0430", tab: "1", recipes: [{ type: "shapeless", count: "1", input: [[{ index: "1125", count: "1" }], [{ index: "864", count: "1" }]] }]
     }, 
-};
+}
 
 export default function(){
     const ElemBody = document.getElementById('vanila'),
