@@ -5,6 +5,10 @@
 }
 
 @media screen and (max-width: 1000px) {
+    header a img{
+        width: 100% !important;
+    }
+
     div#crafting-app__title{
         height: 46px;
     }

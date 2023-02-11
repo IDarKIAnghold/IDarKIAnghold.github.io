@@ -12,8 +12,7 @@ $('#select').ddslick({
     data:ddData,
     width: 120,
     onSelected: function (e) {
-        let c = e.selectedData.value;
-        if(c==1){
+        if(e.selectedData.value == 1){
             $('.crafting-app__items').empty().append(vanila).append(crafting_table_V);
             $('.railcraft').toggleClass("vanila railcraft");
         }else{ 
