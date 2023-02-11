@@ -3046,12 +3046,12 @@ let crafting_dbv = {
     }, 
 };
 
-var crafting_table_v = () =>{
+export default function(){
     const ElemBody = document.getElementById('vanila'),
     setItemTitle = document.getElementById('crafting-app__title'),
     crafting = document.querySelector('.recipe'),
     recipe_output = document.querySelector('.recipe_output i')
-    // recipe_input = document.querySelector('.recipe_input i')
+    // recipe_input = document.querySelector('.recipe_input')
     Object.keys(crafting_dbv).forEach(function(key) {
         const iElem = document.createElement('i')
         iElem.className = `crafting-app__item v${crafting_dbv[key].id}`
@@ -3060,7 +3060,7 @@ var crafting_table_v = () =>{
             iElem.dataset.tab = 11
         else
             iElem.dataset.tab = crafting_dbv[key].tab
-        if(crafting_dbv[key].recipes == '')iElem.style.display = "none"
+        
         iElem.onclick = () =>{
             setItemTitle.textContent = "Крафт предмета " + crafting_dbv[key].name
             if(["smelting", "smoking", "blasting"].includes(crafting_dbv[key].recipes[0].type) ){
@@ -3078,7 +3078,6 @@ var crafting_table_v = () =>{
             // recipe_input.title = crafting_dbv[key].name;
         }
         ElemBody.appendChild(iElem)
+        if(crafting_dbv[key].recipes == '') $(iElem).remove();
     });  
 }
-
-export default crafting_table_v;

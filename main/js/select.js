@@ -16,6 +16,6 @@ $('#select').ddslick({
         }else{ 
             $('#all-items').empty().append(railcraft)
         }
-        document.getElementById("input").value = "";   
+        document.getElementById("input").value = ""; 
     }
 })

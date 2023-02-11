@@ -18,7 +18,7 @@ Object.keys(categories).forEach(function(key) {
   category.dataset.filter = categories[key].id
   category.textContent = categories[key].name
   if(categories[key].id == 0) 
-    category.className = 'crafting-app__category category_active'
+    category.className = 'crafting-app__category category_active f-all'
   else
     category.className = 'crafting-app__category'
   category.onclick = function(){
@@ -28,12 +28,6 @@ Object.keys(categories).forEach(function(key) {
       current[0].className = current[0].className.replace(" category_active", "")
       this.className += " category_active"
     }
-    document.querySelectorAll('.crafting-app__item').forEach(function (c) {
-      if (c.getAttribute('data-tab') == categories[key].id || categories[key].id == 0)
-        c.classList.remove('hide')
-      else
-        c.classList.add('hide')
-    })
   }
   categoryBody.appendChild(category)
 })
