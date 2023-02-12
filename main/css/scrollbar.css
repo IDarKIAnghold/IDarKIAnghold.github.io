@@ -1,0 +1,17 @@
+:root {
+    --width:10px;
+    --color:#474747;
+    --back:#302f2f;
+    --rounding: 30px;
+}
+
+.scrollbar {
+    overflow-y: scroll;
+    height: 100%;
+    width: 100%;
+}
+
+.scrollbar::-webkit-scrollbar {width: var(--width); }
+.scrollbar::-webkit-scrollbar-track {background-color: var(--back); border-radius: var(--rounding);}
+.scrollbar::-webkit-scrollbar-thumb {background-color: var(--color); border-radius: var(--rounding);}
+.scrollbar::-webkit-scrollbar-thumb:hover{background-color: #6f6f6f; }
