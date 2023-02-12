@@ -12,7 +12,7 @@ export default () =>{
             parse(request.responseText);
         }
         request.send();
-    })('./js/crafting_dbv.json')
+    })('./json/crafting_dbv.json')
 
     function parse(obj) {
         crafting_dbv = JSON.parse(obj);
