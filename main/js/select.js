@@ -12,6 +12,9 @@ $('#select').ddslick({
     data:ddData,
     width: 120,
     onSelected: function (e) {
+        document.getElementById("input").value = ""
+        $('.category_active').removeClass('category_active')
+        $('.crafting-app__All').addClass('category_active') 
         if(e.selectedData.value == 1){
             $('.crafting-app__items').empty().append(vanila).append(crafting_table_V);
             $('.railcraft').toggleClass("vanila railcraft");
@@ -19,8 +22,5 @@ $('#select').ddslick({
             $('.crafting-app__items').empty().append(railcraft).append();
             $('.vanila').toggleClass("vanila railcraft");
         }
-        document.getElementById("input").value = ""; 
-        $('.category_active').removeClass('category_active')
-        $('.crafting-app__All').addClass('category_active');
     }
 })
