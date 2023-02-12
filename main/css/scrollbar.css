@@ -9,7 +9,6 @@
 .scrollbar {
     overflow-y: scroll;
     height: 100%;
-    width: 100%;
 }
 
 .scrollbar::-webkit-scrollbar {width: var(--width); }
