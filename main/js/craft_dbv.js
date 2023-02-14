@@ -4,8 +4,8 @@ export default () =>{
     setItemTitle = document.getElementById('crafting-app__title'),
     recipe_output = document.querySelector('.recipe_output i'),
     recipe_index = document.querySelector('.recipe_control-index'),
-    next_btn = document.querySelector('recipe_control-btn_next'),
-    prev_btn = document.querySelector('recipe_control-btn_prev');
+    next_btn = document.querySelector('.recipe_control-btn_next'),
+    prev_btn = document.querySelector('.recipe_control-btn_prev');
 
     (function getFile (crafting_dbv) {
         let request = new XMLHttpRequest();  
@@ -20,6 +20,7 @@ export default () =>{
         crafting_dbv = JSON.parse(obj);
         Object.keys(crafting_dbv).forEach(function(key) {
             const iElem = document.createElement('i');
+            let i = 1;
             iElem.className = `crafting-app__item v${crafting_dbv[key].id}`;
             iElem.title = crafting_dbv[key].name;
             if(crafting_dbv[key].tab == undefined) 
@@ -27,12 +28,23 @@ export default () =>{
             else
                 iElem.dataset.tab = crafting_dbv[key].tab
             iElem.onclick = () =>{
-                let i = 1
                 setItemTitle.textContent = "Крафт предмета " + crafting_dbv[key].name;
-                recipe_index.textContent = i + '/' + crafting_dbv[key].recipes.length
+                recipe_index.textContent = i + '/' + crafting_dbv[key].recipes.length;
+                next_btn.onclick = () =>{
+                    if(i < crafting_dbv[key].recipes.length){
+                        i++;
+                        recipe_index.textContent = i + '/' + crafting_dbv[key].recipes.length
+                    }
+                } 
+                prev_btn.onclick = () =>{
+                    if(i <= crafting_dbv[key].recipes.length & i > 1){
+                        i -= 1;
+                        recipe_index.textContent = i + '/' + crafting_dbv[key].recipes.length
+                    }
+                }
                 recipe_output.className = (`v${crafting_dbv[key].id}`)
                 recipe_output.title = crafting_dbv[key].name
-            }  
+            } 
             if(crafting_dbv[key].recipes != '')
                 ElemBody.appendChild(iElem) 
             else

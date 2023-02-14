@@ -234,6 +234,7 @@
 .recipe_control{
     margin-left: 15px;
     float: left;
+    user-select: none;
 }
 
 .recipe_control-btn{
@@ -249,4 +250,8 @@
     height: 52px;
     padding-top: 16px;
     color: white;
+}
+
+.recipe_control-active{
+    cursor: pointer;
 }
