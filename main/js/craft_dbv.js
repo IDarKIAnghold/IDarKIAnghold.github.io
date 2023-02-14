@@ -21,6 +21,7 @@ export default () =>{
         Object.keys(crafting_dbv).forEach(function(key) {
             const iElem = document.createElement('i');
             let i = 1;
+            let index = 0
             iElem.className = `crafting-app__item v${crafting_dbv[key].id}`;
             iElem.title = crafting_dbv[key].name;
             if(crafting_dbv[key].tab == undefined) 
@@ -33,12 +34,16 @@ export default () =>{
                 next_btn.onclick = () =>{
                     if(i < crafting_dbv[key].recipes.length){
                         i++;
+                        index++;
+                        console.log(crafting_dbv[key].recipes[index].type);
                         recipe_index.textContent = i + '/' + crafting_dbv[key].recipes.length
                     }
                 } 
                 prev_btn.onclick = () =>{
                     if(i <= crafting_dbv[key].recipes.length & i > 1){
-                        i -= 1;
+                        i--;
+                        index--;
+                        console.log(crafting_dbv[key].recipes[index].type);
                         recipe_index.textContent = i + '/' + crafting_dbv[key].recipes.length
                     }
                 }
