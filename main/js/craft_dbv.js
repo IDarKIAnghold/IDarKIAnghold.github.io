@@ -54,7 +54,6 @@ export default () =>{
                 ElemBody.appendChild(iElem) 
             else
                 $(iElem).remove() 
-
         });  
     }
 }
