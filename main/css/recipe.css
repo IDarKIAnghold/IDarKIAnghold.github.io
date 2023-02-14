@@ -230,3 +230,23 @@
 .recipe_campfire .recipe_output i::after{
     color: white;
 }
+
+.recipe_control{
+    margin-left: 15px;
+    float: left;
+}
+
+.recipe_control-btn{
+    width: 24px;
+    height: 50px;
+    padding-top: 15px;
+    text-align: center;
+    background: #232323;
+    color: #5d5d5d;
+}
+
+.recipe_control-index{
+    height: 52px;
+    padding-top: 16px;
+    color: white;
+}
