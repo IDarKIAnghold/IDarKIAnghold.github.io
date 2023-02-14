@@ -30,15 +30,15 @@ export default () => {
             else
                 iElem.dataset.tab = crafting_dbv[key].tab
             iElem.onclick = () => {
-                setItemTitle.textContent = "Крафт предмета " + crafting_dbv[key].name;
-                recipe_index.textContent = counter + '/' + crafting_dbv[key].recipes.length;
+                setItemTitle.textContent = `Крафт предмета ${crafting_dbv[key].name}`;
+                recipe_index.textContent = `${counter}/${crafting_dbv[key].recipes.length}`;
                 recipeType.className = `recipe recipe_${crafting_dbv[key].recipes[index].type}`
                 next_btn.onclick = () => {
                     if (counter < crafting_dbv[key].recipes.length) {
                         counter++;
                         index++;
                         recipeType.className = `recipe recipe_${crafting_dbv[key].recipes[index].type}`
-                        recipe_index.textContent = counter + '/' + crafting_dbv[key].recipes.length
+                        recipe_index.textContent = `${counter}/${crafting_dbv[key].recipes.length}`;
                     }
                 }
                 prev_btn.onclick = () => {
@@ -46,7 +46,7 @@ export default () => {
                         counter--;
                         index--;
                         recipeType.className = `recipe recipe_${crafting_dbv[key].recipes[index].type}`
-                        recipe_index.textContent = counter + '/' + crafting_dbv[key].recipes.length
+                        recipe_index.textContent = `${counter}/${crafting_dbv[key].recipes.length}`;
                     }
                 }
                 recipe_output.className = (`v${crafting_dbv[key].id}`)

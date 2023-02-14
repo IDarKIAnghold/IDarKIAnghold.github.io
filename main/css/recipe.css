@@ -254,4 +254,5 @@
 
 .recipe_control-active{
     cursor: pointer;
+    color: white;
 }
