@@ -24,10 +24,9 @@ export default () =>{
                 iElem.dataset.tab = 11
             else
                 iElem.dataset.tab = crafting_dbv[key].tab
-            
             iElem.onclick = () =>{
                 setItemTitle.textContent = "Крафт предмета " + crafting_dbv[key].name;
-                recipe_index.textContent = crafting_dbv[key].recipes.length
+                recipe_index.textContent = '1/' + crafting_dbv[key].recipes.length
                 recipe_output.className = (`v${crafting_dbv[key].id}`)
                 recipe_output.title = crafting_dbv[key].name
             }  
