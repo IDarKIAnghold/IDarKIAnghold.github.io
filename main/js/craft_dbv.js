@@ -27,15 +27,6 @@ export default () =>{
             
             iElem.onclick = () =>{
                 setItemTitle.textContent = "Крафт предмета " + crafting_dbv[key].name
-                if(["smelting", "smoking", "blasting", "smoking"].includes(crafting_dbv[key].recipes[0].type) ){
-                    crafting.className = `recipe recipe_${crafting_dbv[key].recipes[0].type}`
-                    // recipe_input.className = 'v720'
-                }else if(['shapeless','shaped'].includes(crafting_dbv[key].recipes[0].type)){
-                    crafting.className = `recipe recipe_${crafting_dbv[key].recipes[0].type}`
-                }else{  
-                    crafting.className = `recipe recipe_${crafting_dbv[key].recipes[0].type}` 
-                    // recipe_input.className = 'v733'
-                }
                 recipe_output.className = (`v${crafting_dbv[key].id}`)
                 recipe_output.title = crafting_dbv[key].name
             }    
