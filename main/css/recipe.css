@@ -23,7 +23,6 @@
     position: relative;
 }
 
-
 .recipe i{
     width: 42px;
     height: 42px;
@@ -34,13 +33,13 @@
     position: relative;
 }
 
-.recipe_smelting .recipe_input i{
+.recipe_smelting .recipe_input i, .recipe_blasting .recipe_input i, .recipe_smoking .recipe_input i{
     position: absolute;
     left: 44px;
 
 }
 
-.recipe_smelting .recipe_input i:nth-child(2){
+.recipe_smelting .recipe_input i:nth-child(2), .recipe_blasting .recipe_input i:nth-child(2), .recipe_smoking .recipe_input i:nth-child(2){
     top: 94px;
 }
 
@@ -133,4 +132,101 @@
     position: absolute;
     top: 56px;
     left: 105px;
+}
+
+.recipe_blasting::before {
+    content: "Плавильная печь";
+    position: absolute;
+    top: 76px;
+    left: -38px;
+}
+
+.recipe_blasting:before{
+    color: #404040;
+    font-size: 16px;
+    transform: rotate(-90deg);
+}
+
+.recipe_blasting .recipe_input:after{
+    background: url(../SRC/furnace.gif) no-repeat;
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    content: "";
+    left: 50px;
+    top: 55px;
+}
+
+.recipe_blasting .recipe_output i::after {
+    left: -80px;
+    color: #fff;
+    text-shadow: 1px 1px 0 #8b8b8b;
+}
+
+.recipe_smoking::before {
+    content: "Коптильня";
+    position: absolute;
+    top: 76px;
+    left: -15px;
+}
+
+.recipe_smoking:before{
+    color: #404040;
+    font-size: 16px;
+    transform: rotate(-90deg);
+}
+
+.recipe_smoking .recipe_input:after{
+    background: url(../SRC/furnace.gif) no-repeat;
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    content: "";
+    left: 50px;
+    top: 55px;
+}
+
+.recipe_smoking .recipe_output i::after {
+    left: -80px;
+    color: #fff;
+    text-shadow: 1px 1px 0 #8b8b8b;
+}
+
+.recipe_stonecutting::before{
+    content: "Камнерез";
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    color: rgb(64, 64, 64);
+    font-size: 16px;
+}
+.recipe_stonecutting .recipe_input i{
+    position: absolute;
+    left: 40px;
+    top: 54px;
+}
+.recipe_stonecutting .recipe_output i {
+    right: 50px;
+}
+
+.recipe_campfire::before{
+    content: "Костёр";
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    color: rgb(64, 64, 64);
+    font-size: 16px;
+}
+
+.recipe_campfire .recipe_input i{
+    position: absolute;
+    left: 50px;
+    top: 54px;
+}
+.recipe_campfire .recipe_output i {
+    right: 50px;
+}
+
+.recipe_campfire .recipe_output i::after{
+    color: white;
 }
