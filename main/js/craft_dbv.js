@@ -1,6 +1,5 @@
 export default () => {
     let crafting_dbv;
-    let filename = 'vanila'
     const ElemBody = document.getElementById('item-list'),
         setItemTitle = document.getElementById('crafting-app__title'),
         recipeType = document.querySelector('.recipe'),
@@ -17,7 +16,7 @@ export default () => {
             parse(request.responseText);
         }
         request.send();
-    })(`./json/${filename}.json`)
+    })(`./json/vanila.json`)
 
     function parse(obj) {
         crafting_dbv = JSON.parse(obj);
