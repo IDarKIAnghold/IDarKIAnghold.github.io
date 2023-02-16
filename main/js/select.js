@@ -22,5 +22,6 @@ $('#select').ddslick({
             $('.crafting-app__items').empty().append(railcraft).append();
             $('.vanila').toggleClass("vanila railcraft");
         }
+        console.log(ddData.selectedData.text);
     }
 })
