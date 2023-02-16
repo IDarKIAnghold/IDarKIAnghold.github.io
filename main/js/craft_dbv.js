@@ -1,3 +1,4 @@
+import filename from "./select.js";
 export default () => {
     let crafting_dbv;
     const ElemBody = document.getElementById('item-list'),
@@ -8,7 +9,6 @@ export default () => {
         recipe_index = document.querySelector('.recipe_control-index'),
         next_btn = document.querySelector('.recipe_control-btn_next'),
         prev_btn = document.querySelector('.recipe_control-btn_prev');
-
     (function getFile(crafting_dbv) {
         let request = new XMLHttpRequest();
         request.open('GET', crafting_dbv)
@@ -16,7 +16,7 @@ export default () => {
             parse(request.responseText);
         }
         request.send();
-    })(`./json/vanila.json`)
+    })(`./json/${filename}.json`)
 
     function parse(obj) {
         crafting_dbv = JSON.parse(obj);
