@@ -1,8 +1,8 @@
+import crafting_table_V from "./craft_dbv.js"
 let ddData = [
     { text: "Vanila", value: 1,},
     { text: "RailCraft", value: 2,}
 ];
-import crafting_table_V from "./craft_dbv.js"
 let vanila = "<div class='scrollbar vanila' id='item-list'>"
 let railcraft = "<div class='scrollbar railcraft'id='item-list'>"
 $('.crafting-app__recipe').addClass('vanila');
@@ -11,7 +11,6 @@ $('#select').ddslick({
     width: 120,
     onSelected: function (e) {
         document.getElementById("input").value = ""
-        filename = e.selectedData.text
         $('.category_active').removeClass('category_active')
         $('.crafting-app__All').addClass('category_active') 
         if(e.selectedData.value == 1){
@@ -23,4 +22,3 @@ $('#select').ddslick({
         }
     }
 })
-export default filename
