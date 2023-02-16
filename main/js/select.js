@@ -1,12 +1,13 @@
-var ddData = [
+let ddData = [
     { text: "Vanila", value: 1,},
     { text: "RailCraft", value: 2,}
 ];
 
 import crafting_table_V from "./craft_dbv.js";
 
-var vanila = "<div class='scrollbar vanila' id='item-list'>"
-var railcraft = "<div class='scrollbar railcraft'id='item-list'>"
+let vanila = "<div class='scrollbar vanila' id='item-list'>"
+let railcraft = "<div class='scrollbar railcraft'id='item-list'>"
+
 $('.crafting-app__recipe').addClass('vanila');
 $('#select').ddslick({
     data:ddData,
@@ -22,6 +23,6 @@ $('#select').ddslick({
             $('.crafting-app__items').empty().append(railcraft).append();
             $('.vanila').toggleClass("vanila railcraft");
         }
-        console.log(ddData.selectedData.text);
-    }
+    },
 })
+
