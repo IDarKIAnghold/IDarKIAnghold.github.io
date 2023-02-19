@@ -60,6 +60,7 @@ function parse(obj) {
                     }
                 }
             }
+            
             if (crafting_dbv[key].recipes != '')
                 ElemBody.appendChild(iElem)
             else
