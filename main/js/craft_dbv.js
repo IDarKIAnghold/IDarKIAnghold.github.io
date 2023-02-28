@@ -35,9 +35,11 @@ function parse(obj) {
                 recipe_index.textContent = `${counter}/${crafting_dbv[key].recipes.length}`;
                 recipeType.className = `recipe recipe_${crafting_dbv[key].recipes[index].type}`
     
-                if(crafting_dbv[key].recipes[index].count > 1) 
+                if(crafting_dbv[key].recipes[index].count > 1)
                     recipe_output_count.textContent = crafting_dbv[key].recipes[index].count
-    
+                else
+                    recipe_output_count.textContent = ''
+
                 recipe_output.className = (`v${crafting_dbv[key].id}`)
                 recipe_output.title = crafting_dbv[key].name
     
